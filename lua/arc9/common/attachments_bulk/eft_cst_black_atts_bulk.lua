@@ -2304,6 +2304,8 @@ ATT.MalfunctionMeanShotsToFailMult = 0.98
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
+ATT.ActivateElements = {"eft_ar10_mag_l7_20"}
+
 ATT.Category = {"eft_ar10_mag"}
 
 ATT.ClipSize = 20
@@ -2332,6 +2334,8 @@ ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.ActivateElements = {"eft_ar10_mag_l7_25"}
 
 ATT.Category = {"eft_ar10_mag"}
 
