@@ -1832,3 +1832,636 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "eft_hg_ak_cncguns_blk")
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////      eft_charge_ar15_ach_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Geissele ACH charging handle"
+ATT.CompactName = "ACH"
+ATT.Icon = Material("entities/eft_ar15_attachments/charge/ar15_geissele_ach_charging_handle_blk.png", "mips smooth")
+ATT.Description = [[Geissele Airborne Charging Handle for AR-15 and compatible systems.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasBolt = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/charge_ar15_geissele_ach.mdl"
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+ATT.Category = {"eft_ar15_charge"}
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/charge_ar15_geissele_ach_BLK"
+
+ARC9.LoadAttachment(ATT, "eft_charge_ar15_ach_blk")
+
+///////////////////////////////////////      eft_silencer_ar15_qdc556_blk
+
+ATT = {}
+
+ATT.PrintName = "KAC QDC 5.56x45 sound suppressor"
+ATT.CompactName = "QDC 556"
+ATT.Icon = Material("entities/eft_ar15_attachments/muzzle/kac_qdc_556x45_sound_suppressor_blk.png", "mips smooth")
+ATT.Description = [[The Knight's Armament Company QDC 556 sound suppressor, designed for use with 5.56x45 caliber weapon systems. Can only be installed on the KAC QDC 3-Prong Flash Eliminator.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_qdc_kac_qdc_suppressor_556x45.mdl"
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 5
+ATT.Silencer = true
+
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 6
+ATT.EFTErgoAdd = -20
+ATT.CustomCons = { Ergonomics = "-20" }
+ATT.RecoilMult = 0.86
+ATT.VisualRecoilMult = 0.86
+ATT.SpreadMult = 1.01
+ATT.HeatCapacityMult = 1.05
+ATT.PhysBulletMuzzleVelocityMult = 1.0175
+
+ATT.Category = {"eft_ar15_kacqdc"}
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/silencer_qdc_kac_qdc_suppressor_556x45_BLK"
+
+ARC9.LoadAttachment(ATT, "eft_silencer_ar15_qdc556_blk")
+
+
+
+///////////////////////////////////////      eft_hg_ar15_ddrisii1225_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense RIS II 12.25 handguard (Black)"
+ATT.CompactName = "RIS II 12.25"
+ATT.Icon = Material("entities/eft_ar15_attachments/hg/ar15_daniel_defense_ris_ii_1225_handguard_(coyote_brown)_blk.png", "mips smooth")
+ATT.Description = [[The Daniel Defense RIS II 12.25 foregrip is a part of the SOPMOD Block II program to replace the standard M4CQBR or Mk18 foregrips in the US SOCOM service. It's made with light but durable aircraft aluminum alloy and comes equipped with 4 mounts for the installation of additional devices and accessories. This foregrip option is incompatible with the M203 UBGL.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+ATT.HeatCapacityMult = 0.968
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_ii_12,25.mdl"
+ATT.LHIK = true 
+ATT.LHIK_Priority = 0 -- lower
+-- ATT.LHIK_Priority = -22 -- needs lower hg
+
+ATT.Category = {"eft_ar15_hguard"}
+ATT.Folder = "Daniel Defens"
+
+ATT.ExcludeElements = {"barrel_260mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_ii_1225_BLK_0"
+
+ATT.Attachments = {
+    {
+        PrintName = "Lower HG",
+        Category = {"eft_hglower_ddrisii1225"},
+        Pos = Vector(0, 0.87, -0.07),
+        Ang = Angle(0, 0, 0),   
+        Icon_Offset = Vector(0, 3.35, -1),
+    },    
+    {
+        PrintName = "Backup",
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.8, -1.15),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Front sight",
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 12.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },    
+    {
+        PrintName = "Top Tactical",
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = "R Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(1.1, 12, 0.1),
+        Ang = Angle(0, -90, 90),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = "L Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(-1.1, 12, 0.1),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii1225_blk")
+
+///////////////////////////////////////      eft_hg_ar15_ddrisii1225_lower_blk
+ATT = {}
+ATT.PrintName = "AR-15 Daniel Defense RIS II 12.25 lower handguard (Black)"
+ATT.CompactName = "RIS II 12.25"
+ATT.Icon = Material("entities/eft_ar15_attachments/hg/ar15_daniel_defense_ris_ii_1225_lower_handguard_(coyote_brown)_blk.png", "mips smooth")
+ATT.Description = [[The Daniel Defense RIS II 12.25 lower handguard. Made with light but durable aircraft aluminum alloy. Equipped with RIS interface for installation of additional devices and accessories. Coyote Brown version.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_ii_12,25_lower.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 1 -- lower
+ATT.Category = {"eft_hglower_ddrisii1225"}
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.HeatCapacityMult = 0.975
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_ii_1225_lower_BLK"
+
+ATT.Attachments = {
+    {
+        PrintName = "B Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_bipod"},
+        Pos = Vector(0, 10, 1.15),
+        Ang = Angle(0, -90, 180),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = "Grip",
+        Category = {"eft_foregrip_small", "eft_foregrip_large"},
+        Pos = Vector(0, 3.4, 1.2),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+}
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddrisii1225_lower_blk")
+
+
+///////////////////////////////////////      eft_hg_ar15_ddfsp_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Daniel Defense RIS II FSP 9.5 handguard (Black)"
+ATT.CompactName = "RIS II FSP 9.5 CB"
+ATT.Icon = Material("entities/eft_ar15_attachments/hg/ar15_daniel_defense_ris_ii_fsp_95_handguard_(coyote_brown)_blk.png", "mips smooth")
+ATT.Description = [[The Daniel Defense RIS II FSP 9.5 foregrip is a part of the SOPMOD Block II program to replace the standard M4CQBR or Mk18 foregrips in the US SOCOM service. It's made with light but durable aircraft aluminum alloy and comes equipped with 4 mounts for the installation of additional devices and accessories. This foregrip option is incompatible with the M203 UBGL.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_ii_fsp_9,5.mdl"
+ATT.LHIK = true 
+ATT.EFTErgoAdd = 7
+ATT.CustomPros = { Ergonomics = "+7" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 0.988
+ATT.Category = {"eft_ar15_hguard"}
+ATT.Folder = "Daniel Defens"
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_ii_fsp_9,5_BLK"
+
+ATT.Attachments = {
+    {
+        PrintName = "Grip",
+        Category = {"eft_foregrip_small", "eft_foregrip_large"},
+        Pos = Vector(0, 4.2, 1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    }, 
+    {
+        PrintName = "Top Tactical",
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5-3.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = "R Tactical",
+        Category = {"eft_tactical", "eft_tactical_top"},
+        Pos = Vector(1.1, 12-3.5, 0.1),
+        Ang = Angle(0, -90, 90),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = "L Tactical",
+        Category = {"eft_tactical", "eft_tactical_top"},
+        Pos = Vector(-1.1, 12-3.5, 0.1),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_ddfsp_blk")
+
+
+///////////////////////////////////////      eft_hg_ar15_precision_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Precision Reflex GEN III Delta Carbon handguard"
+ATT.CompactName = "Delta Carbon"
+ATT.Icon = Material("entities/eft_ar15_attachments/hg/ar15_precision_reflex_gen_iii_delta_carbon_handguard_blk.png", "mips smooth")
+ATT.Description = [[The GEN III Delta Carbon handguard for AR-15 systems, equipped with a custom interface for the installation of additional devices and accessories. Manufactured by Precision Reflex.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_precision_reflex_carbon_fiber_delta_gen_3.mdl"
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_precision_reflex_carbon_fiber_delta_gen_3_BLK"
+
+ATT.ModelSkin = 2
+ATT.LHIK = true 
+
+ATT.Category = {"eft_ar15_hguard"}
+ATT.EFTErgoAdd = 14
+ATT.CustomPros = { Ergonomics = "+14" }
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+ATT.HeatCapacityMult = 1.03
+ATT.ExcludeElements = {"barrel_260mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+
+ATT.Attachments = {
+    {
+        PrintName = "PR Bottom",
+        Category = {"eft_mount_precis_b"},
+        Pos = Vector(0, 4.82, 1.12),
+        Ang = Angle(0, -90, -90),   
+    },
+    {
+        PrintName = "PR Left",
+        Category = {"eft_mount_precis_s"},
+        Pos = Vector(-1.02, 10.85, 0.58),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "PR Right",
+        Category = {"eft_mount_precis_s"},
+        Pos = Vector(1.02, 10.85, 0.58),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "PR Top",
+        Category = {"eft_mount_precis_t"},
+        Pos = Vector(0, 7.9, -1),
+        Ang = Angle(0, 0, 0),   
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_precision_blk")
+
+
+
+///////////////////////////////////////      eft_hg_ar15_mk16_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Geissele SMR MK16 13.5 inch M-LOK handguard"
+ATT.CompactName = "SMR MK16 13.5"
+ATT.Icon = Material("entities/eft_ar15_attachments/hg/ar15_geissele_smr_mk16_95_inch_mlok_handguard_blk.png", "mips smooth")
+ATT.Description = [[Geissele SMR 13.5 inch M-LOK handguard for AR-15 equipped with a M-LOK interface for installation of additional devices and accessories.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_geissele_smr_mk16_135_inch.mdl"
+ATT.LHIK = true 
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 0.965
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.ExcludeElements = {"barrel_260mm", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Backup",
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 2.3, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Front sight",
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 9.8+3.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Top Tactical",
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = "M-LOK R",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.8, 9.2+1.5, 0.1),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK L",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.8, 9.2+1.5, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK B",
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 4, 1),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_geissele_smr_mk16_135_inch_BLK"
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_mk16_blk")
+
+///////////////////////////////////////      eft_hg_ar15_mk1695_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Geissele SMR MK16 9.5 inch M-LOK handguard"
+ATT.CompactName = "SMR MK16 9.5"
+ATT.Icon = Material("entities/eft_ar15_attachments/hg/ar15_geissele_smr_mk16_135_inch_mlok_handguard_blk.png", "mips smooth")
+ATT.Description = [[Geissele SMR 9.5 inch M-LOK handguard for AR-15 equipped with a M-LOK interface for installation of additional devices and accessories.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_geissele_smr_mk16_95_inch.mdl"
+ATT.LHIK = true 
+ATT.EFTErgoAdd = 8
+ATT.CustomPros = { Ergonomics = "+8" }
+ATT.HeatCapacityMult = 0.996
+ATT.Category = {"eft_ar15_hguard"}
+
+ATT.ExcludeElements = {"eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Backup",
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 1.3, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Front sight",
+        Category = {"eft_frontsight"},
+        Pos = Vector(0, 9.8+3.5-4.2, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Top Tactical",
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.5-3.2, -1.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = "M-LOK R",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.8, 9.2+1.5-2.6, 0.1),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK L",
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.8, 9.2+1.5-2.6, 0.1),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "M-LOK B",
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 4, 1),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_geissele_smr_mk16_95_inch_BLK"
+
+ARC9.LoadAttachment(ATT, "eft_hg_ar15_mk1695_blk")
+
+
+
+
+
+
+
+///////////////////////////////////////      eft_ar10_mag_l7_20_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AR-10 7.62x51 Lancer L7AWM 20-round magazine"
+ATT.CompactName = "L7AWM 20"
+ATT.Icon = Material("entities/eft_spear_attachments/20_blk.png", "mips smooth")
+ATT.Description = [[A 20-round double-stack L7AWM 20 magazine for 7.62x51 NATO ammunition. Manufactured by Lancer Systems.]]
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.MalfunctionMeanShotsToFailMult = 0.98
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_ar10_mag"}
+
+ATT.ClipSize = 20
+ATT.ChamberSize = 1
+ATT.SuppressEmptySuffix = false 
+ATT.DropMagazineAmount = 1
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ar10_lancer_l7_awm_762x51_20_blk.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ar10_lancer_l7_awm_762x51_20_blk.mdl"
+
+
+ARC9.LoadAttachment(ATT, "eft_ar10_mag_l7_20_blk")
+
+///////////////////////////////////////      eft_ar10_mag_l7_25_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AR-10 7.62x51 Lancer L7AWM 25-round magazine"
+ATT.CompactName = "L7AWM 25"
+ATT.Icon = Material("entities/eft_spear_attachments/25_blk.png", "mips smooth")
+ATT.Description = [[A 25-round double-stack L7AWM 25 magazine for 7.62x51 NATO ammunition. Manufactured by Lancer Systems.]]
+
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
+ATT.MalfunctionMeanShotsToFailMult = 0.98
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_ar10_mag"}
+
+ATT.ClipSize = 25
+ATT.ChamberSize = 1
+ATT.SuppressEmptySuffix = false 
+ATT.DropMagazineAmount = 1
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ar10_lancer_l7_awm_762x51_25_blk.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ar10_lancer_l7_awm_762x51_25_blk.mdl"
+
+
+ARC9.LoadAttachment(ATT, "eft_ar10_mag_l7_25_blk")
+
+
+///////////////////////////////////////      eft_aug_mag_10_blk
+
+ATT = {}
+
+ATT.PrintName = "Steyr AUG 5.56x45 10-round magazine"
+ATT.CompactName = "AUG 10"
+ATT.Icon = Material("entities/eft_aug_attachments/10_blk.png", "mips smooth")
+ATT.Description = [[A 10-round polymer Steyr AUG magazine, for 5.56x45 ammunition.]]
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+-- ATT.EFTErgoAdd = -4
+-- ATT.CustomCons = { Ergonomics = "-4" }
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_aug_mag"}
+
+ATT.ActivateElements = {"mag10"}
+
+ATT.ClipSize = 10
+ATT.ChamberSize = 1
+ATT.SuppressEmptySuffix = false 
+ATT.DropMagazineAmount = 1
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_aug_20_blk.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aug_20_blk.mdl"
+
+ARC9.LoadAttachment(ATT, "eft_aug_mag_10_blk")
+
+///////////////////////////////////////      eft_aug_mag_30_blk
+
+ATT = {}
+
+ATT.PrintName = "Steyr AUG 5.56x45 30-round magazine"
+ATT.CompactName = "AUG 30"
+ATT.Icon = Material("entities/eft_aug_attachments/30_blk.png", "mips smooth")
+ATT.Description = [[A 30-round polymer Steyr AUG magazine, for 5.56x45 ammunition.]]
+
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_aug_mag"}
+
+ATT.ActivateElements = {"mag30"}
+
+ATT.ClipSize = 30
+ATT.ChamberSize = 1
+ATT.SuppressEmptySuffix = false 
+ATT.DropMagazineAmount = 1
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_aug_30_blk.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aug_30_blk.mdl"
+
+ARC9.LoadAttachment(ATT, "eft_aug_mag_30_blk")
+
+///////////////////////////////////////      eft_aug_mag_42_blk
+
+ATT = {}
+
+ATT.PrintName = "Steyr AUG 5.56x45 42-round magazine"
+ATT.CompactName = "AUG 42"
+ATT.Icon = Material("entities/eft_aug_attachments/42_blk.png", "mips smooth")
+ATT.Description = [[A 42-round polymer Steyr AUG magazine, for 5.56x45 ammunition.]]
+
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_aug_mag"}
+
+ATT.ActivateElements = {"mag42"}
+
+ATT.ClipSize = 42
+ATT.ChamberSize = 1
+ATT.SuppressEmptySuffix = false 
+ATT.DropMagazineAmount = 1
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_aug_42_blk.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aug_42_blk.mdl"
+
+ARC9.LoadAttachment(ATT, "eft_aug_mag_42_blk")
+
+
+
+///////////////////////////////////////      eft_silencer_ar15_socomrc2_blk
+
+ATT = {}
+
+ATT.PrintName = "SureFire SOCOM556-RC2 5.56x45 sound suppressor"
+ATT.CompactName = "RC2"
+ATT.Icon = Material("entities/eft_ar15_attachments/muzzle/surefire_socom556rc2_556x45_sound_suppressor_blk.png", "mips smooth")
+ATT.Description = [[Surefire SOCOM556-RC2 5.56x45 and .223 silencer, can only be installed on compatible Surefire muzzle devices.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/silencer_socom_surefire_socom556_rc2_556x45.mdl"
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 5
+ATT.Silencer = true
+
+ATT.MuzzleDevice = true
+ATT.MuzzleDevice_Priority = 6
+ATT.EFTErgoAdd = -17
+ATT.CustomCons = { Ergonomics = "-17" }
+ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
+ATT.HeatCapacityMult = 1.11
+ATT.PhysBulletMuzzleVelocityMult = 1.0075
+
+ATT.Category = {"eft_ar15_surefire_silencer"}
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/silencer_socom_surefire_socom556_rc2_556x45_BLK"
+
+ARC9.LoadAttachment(ATT, "eft_silencer_ar15_socomrc2_blk")
