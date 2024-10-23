@@ -842,7 +842,7 @@ ATT.DrawFunc = function(swep, model, wm)
     ang:RotateAroundAxis(ang:Forward(), 90)
     ang:RotateAroundAxis(ang:Right(), 90)
 
-	cam.Start3D2D(pos, ang, 0.01)
+    cam.Start3D2D(pos, ang, 0.01)
         draw.SimpleText(text, "arc9eft_raptar", 0, 1, textcolor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
     cam.End3D2D()
 end
@@ -1669,14 +1669,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.EFTErgoAdd = 5
 ATT.CustomPros = { Ergonomics = "+5" }
 
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_pufgun_20.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_pufgun_20_blk.mdl"
 ATT.DropMagazineAmount = 1
 
 ATT.Category = {
     "eft_vityaz_mag",
 }
 
-ATT.ActivateElements = {"eft_vityaz_mag_sg919_20"}
+ATT.ActivateElements = {"eft_vityaz_mag_sg919_20","9mmmag"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
@@ -1702,14 +1702,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.EFTErgoAdd = -2
 ATT.CustomCons = { Ergonomics = "-2" }
 
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_pufgun_30.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_pufgun_30_blk.mdl"
 ATT.DropMagazineAmount = 1
 
 ATT.Category = {
     "eft_vityaz_mag",
 }
 
-ATT.ActivateElements = {"eft_vityaz_mag_sg919_30"}
+ATT.ActivateElements = {"eft_vityaz_mag_sg919_30","9mmmag"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
@@ -1719,3 +1719,81 @@ ATT.SubMaterial8 = "models/weapons/arc9/darsu_eft/mods/mag_pp-19-01_pufgun_mag_s
 
 ARC9.LoadAttachment(ATT, "eft_vityaz_mag_sg919_30_blk")
 
+
+
+///////////////////////////////////////      eft_hg_ak_cncguns_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AK CNC Guns OV GP handguard"
+ATT.CompactName = "OV GP"
+ATT.Icon = Material("entities/eft_ak_attachments/hg/cnc_blk.png", "mips smooth")
+ATT.Description = [[The OV GP handguard for AK series assault rifles, equipped with a KeyMod interface for the installation of additional devices and accessories. Manufactured by CNC Guns.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_hg_cncguns_blk.mdl"
+ATT.LHIK = true
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.RecoilMult = 0.975
+ATT.VisualRecoilMult = 0.975
+ATT.HeatCapacityMult = 0.966
+
+
+ATT.RequireElements = {"gasblock"}
+ATT.ExcludeElements = {"railedcover", "eft_vityaz_gas_std"}
+ATT.ActivateElements = {"nolongrear", "nodovetail", "nogp34"}
+ATT.Category = {"eft_ak_handguard", "eft_ak_handguard_custom"}
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_medium", "eft_optic_large", "eft_optic_small"},
+        Pos = Vector(0, -4.5, -1.67),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Grip",
+        Category = {"eft_grip_keymod"},
+        Pos = Vector(0, 4, 1.7),
+        Ang = Angle(0, -90, -90),   
+    },
+    {
+        PrintName = "Tactical",
+        Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount"},
+        RejectAttachments = { ["eft_tactical_raptar"] = true },
+        Pos = Vector(0, 4.5, -1.65),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0.2),
+    },
+    {
+        PrintName = "L Keymod",
+        Category = {"eft_mount_keymod"},
+        RejectAttachments = { ["eft_mount_keymod_cnc4"] = true, ["eft_mount_keymod_si4"] = true },
+        Pos = Vector(-0.8, 3.9, 0.5),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "R Keymod",
+        Category = {"eft_mount_keymod"},
+        RejectAttachments = { ["eft_mount_keymod_cnc4"] = true, ["eft_mount_keymod_si4"] = true },
+        Pos = Vector(0.8, 3.9, 0.5),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Top Tactical",
+        Category = {"eft_tactical_top", "eft_tactical_top_big", "eft_backupmount", "eft_optic_medium", "eft_optic_small"},
+        Pos = Vector(0, 7.5, -1.65),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 1),
+        ExtraSightDistance = 8
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_hg_ak_cncguns_blk")
