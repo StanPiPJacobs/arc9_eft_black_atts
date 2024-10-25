@@ -2469,3 +2469,128 @@ ATT.Category = {"eft_ar15_surefire_silencer"}
 ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/silencer_socom_surefire_socom556_rc2_556x45_BLK"
 
 ARC9.LoadAttachment(ATT, "eft_silencer_ar15_socomrc2_blk")
+
+
+
+
+
+
+
+
+///////////////////////////////////////      eft_pkm_mag_100_blk
+
+ATT = {}
+
+ATT.PrintName = "PK 7.62x54R 100-round box"
+ATT.CompactName = "PK"
+ATT.Icon = Material("entities/eft_pkm_attachments/100_blk.png", "mips smooth")
+ATT.Description = [[A standard-issue 100-round ammunition box for 7.62x54R ammo for Kalashnikov Machine gun. Manufactured by V.A. Degtyarev Plant.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_pkm_dropped_blk.mdl"
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 100
+
+ATT.EFTErgoAdd = -30
+ATT.CustomCons = { Ergonomics = "-30" }
+ATT.MalfunctionMeanShotsToFailMult = 0.99
+
+ATT.Category = {"eft_mag_pkm"}
+
+ATT.ActivateElements = {"eft_pkm_mag_100"}
+
+ATT.SubMaterial13 = "models/weapons/arc9/darsu_eft/mods/mag_pkm_zid_pk_std_762x54r_100_base_BLK"
+ATT.SubMaterial14 = "models/weapons/arc9/darsu_eft/mods/mag_pkm_zid_pk_std_762x54r_100_details_BLK"
+
+ATT.DropMagazineModelHook = function(swep, old)
+    if swep:GetReloading() then
+        return "models/weapons/arc9/darsu_eft/mods/mag_pkm_dropped_blk.mdl"
+    end
+    return "models/weapons/arc9/darsu_eft/mods/belt_pkm_dropped.mdl"
+end
+
+ARC9.LoadAttachment(ATT, "eft_pkm_mag_100_blk")
+
+
+
+
+
+///////////////////////////////////////      eft_hg_ak_goliaf_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AKS-74U Alfa Arms Goliaf handguard"
+ATT.CompactName = "Goliaf"
+ATT.Icon = Material("entities/eft_ak_attachments/su/goliaf_blk.png", "mips smooth")
+ATT.Description = [[This integrally machined handguard is manufactured from aluminum alloy D16T with coyote brown coating and can be installed instead of the standard-issue foregrip on the AKS-74U. It comes fitted with Picatinny rail mounts on three sides, allowing for the installation of additional equipment such as tactical foregrips, flashlights, and laser designators.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasHG = true
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/aksu_goliaf.mdl"
+ATT.LHIK = true
+
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+ATT.RecoilMult = 0.99
+ATT.VisualRecoilMult = 0.99
+ATT.HeatCapacityMult = 1.01
+
+ATT.ExcludeElements = {"eft_muzzle_ak_ak105_std", "eft_muzzle_ak_ak74m_std", "eft_muzzle_ak_ak74_std", "eft_muzzle_ak_rrd4c74", "eft_muzzle_ak_ak74_pws_cqb", "eft_muzzle_ak_ak74_srvv", "eft_muzzle_ak_reactor", "eft_muzzle_ak_dtk1", "eft_silencer_ak_ak74_hexagon", "eft_silencer_ak_pbs4", "eft_silencer_ak_wafflemaker" }
+ATT.RequireElements = {"gasblock"}
+
+ATT.Category = {"eft_aksu_handguard"}
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_medium", "eft_optic_small"},
+        Pos = Vector(0, 3, -1.3),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Grip",
+        Category = {"eft_foregrip_small"},
+        Pos = Vector(0, 3, 1.695),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+    {
+        PrintName = "R Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(1.15, 8, 0.52),
+        Ang = Angle(0, -90, 90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "L Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(-1.15, 8, 0.52),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Top Tactical",
+        Category = {"eft_tactical_top"},
+        Pos = Vector(0, 8.1, -0.7),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "B Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 8.1, 1.7),
+        Ang = Angle(0, -90, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/handguard_aks74u_alfa_arms_goliaf_BLK"
+
+
+ARC9.LoadAttachment(ATT, "eft_hg_ak_goliaf_blk")
+
