@@ -2594,3 +2594,228 @@ ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/handguard_aks74u_alfa_ar
 
 ARC9.LoadAttachment(ATT, "eft_hg_ak_goliaf_blk")
 
+
+
+
+
+///////////////////////////////////////      eft_mag_ar15_hkstanag_blk
+
+
+ATT = {}
+
+ATT.PrintName = "5.56x45 HK 30 STANAG polymer 30-round magazine"
+ATT.CompactName = "Polymer mag"
+ATT.Icon = Material("entities/eft_ar15_attachments/mag/556x45_hk_30_stanag_polymer_30round_magazine_blk.png", "mips smooth")
+ATT.Description = [[30-round polymer HK Polymer mag magazine, for 5.56x45 ammunition.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_stanag_hk_polymer_mag_556x45_30_blk.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_stanag_hk_polymer_mag_556x45_30_blk.mdl"
+
+ATT.Category = {"eft_ar15_mag"}
+ATT.SuppressEmptySuffix = false 
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+
+ATT.MalfunctionMeanShotsToFailMult = 0.95
+
+ATT.ActivateElements = {"30rnd"}
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 30
+
+ARC9.LoadAttachment(ATT, "eft_mag_ar15_hkstanag_blk")
+
+
+
+///////////////////////////////////////      eft_ar_stock_prsgen2f_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Magpul PRS GEN2 stock (BLK)"
+ATT.CompactName = "PRS GEN2"
+ATT.Description = [[The PRS GEN2 stock manufactured by Magpul. Black version.]]
+ATT.Icon = Material("entities/eft_attachments/stocks/prsgen2_blk.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_magpul_prs_gen2_fde.mdl"
+
+ATT.HasStock = true
+
+ATT.RecoilMult = 0.66
+ATT.VisualRecoilMult = 0.66
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.SortOrder = 0
+ATT.Category = "eft_ar_stock_a2"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Folder = "Magpul"
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/stock_ar15_magpul_prs_gen2_BLK"
+
+ARC9.LoadAttachment(ATT, "eft_ar_stock_prsgen2f_blk")
+
+
+///////////////////////////////////////      eft_g28_silencer_blk
+
+ATT = {}
+
+ATT.PrintName = "HK G28 B&T QD 7.62x51 sound suppressor"
+ATT.CompactName = "B&T QD"
+ATT.Icon = Material("entities/eft_g28_attachments/s_blk.png", "mips smooth")
+ATT.Description = [[A quick-detach 7.62x51 silencer manufactured by Brugger & Thomet. Installed on the HK Prolonged flash hider.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 5
+ATT.Silencer = true
+
+ATT.MuzzleEffectQCA = 5
+-- ATT.MuzzleDevice = true
+-- ATT.MuzzleDevice_Priority = 6
+ATT.EFTErgoAdd = -18
+ATT.CustomCons = { Ergonomics = "-18" }
+ATT.RecoilMult = 0.9
+ATT.VisualRecoilMult = 0.9
+ATT.SpreadMult = 0.98
+ATT.HeatCapacityMult = 0.85
+ATT.PhysBulletMuzzleVelocityMult = 1.01
+
+ATT.Category = {"eft_g28_silencer"}
+
+ATT.ActivateElements = {"eft_g28_silencer_std"}
+ATT.SubMaterial13 = "models/weapons/arc9/darsu_eft/mods/silencer_bt_b&t_g28_sd_762x51_BLK"
+
+ARC9.LoadAttachment(ATT, "eft_g28_silencer_blk")
+
+
+///////////////////////////////////////      eft_ar10_hg_rsass_blk
+
+ATT = {}
+
+ATT.PrintName = "R11 RSASS handguard"
+ATT.CompactName = "RSASS"
+ATT.Icon = Material("entities/eft_ar10_attachments/hgrsass_blk.png", "mips smooth")
+ATT.Description = [[A standard handguard manufactured by JP Enterprises for the Remington R11 RSASS marksman rifle. Can also be mounted on any AR-10/AR-15 base receivers.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.HasHG = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_jp_rsass.mdl"
+ATT.LHIK = true
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+ATT.HeatCapacityMult = 1.025
+ATT.RecoilMult = 0.98
+ATT.VisualRecoilMult = 0.98
+
+ATT.Category = {"eft_ar10_hg"}
+ATT.ExcludeElements = {"barrel_254mm"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Backup",
+        Category = {"eft_backupmount"},
+        Pos = Vector(0, 2.1, -1.22),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 8
+    },
+    {
+        PrintName = "Top Tactical",
+        Category = {"eft_tactical_top", "eft_tactical_top_big"},
+        Pos = Vector(0, 7.5, -1.22),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "RAHG R",
+        Category = {"eft_mount_rahg"},
+        -- Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(1.07, 7.2, 0.12),
+        Ang = Angle(180, 90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "RAHG L",
+        Category = {"eft_mount_rahg"},
+        -- Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-1.07, 7.2, 0.12),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "RAHG R2",
+        Category = {"eft_mount_rahg"},
+        -- Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0.75, 10.2, 0.85),
+        Ang = Angle(180, 90, 45),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "RAHG L2",
+        Category = {"eft_mount_rahg"},
+        -- Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-0.75, 10.2, 0.85),
+        Ang = Angle(0, -90, -45),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "RAHG B",
+        Category = {"eft_mount_rahg4", "eft_foregrip_mlok"},
+        -- Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(0, 3.5, 1.19),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "RAHG B Tac",
+        Category = {"eft_mount_rahg"},
+        -- Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(0, 11.25, 1.19),
+        Ang = Angle(0, -90, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_jp_rsass_std_BLK"
+
+ARC9.LoadAttachment(ATT, "eft_ar10_hg_rsass_blk")
+
+
+
+///////////////////////////////////////      eft_sa58_mag_20mmw_blk
+
+ATT = {}
+
+ATT.PrintName = "SA-58/FAL 7.62x51 MMW polymer 20-round magazine"
+ATT.CompactName = "SA58 MMW 20"
+ATT.Icon = Material("entities/eft_sa58_attachments/20mmw_blk.png", "mips smooth")
+ATT.Description = [[A 20-round double-stack plastic magazine for FAL/SA-58 7.62x51 NATO rounds. Manufactured by Moses Machine Works.]]
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.MalfunctionMeanShotsToFailMult = 0.99
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_sa58_mag"}
+
+ATT.ActivateElements = {"mag20"}
+
+ATT.ClipSize = 20
+ATT.ChamberSize = 1
+ATT.SuppressEmptySuffix = false 
+ATT.DropMagazineAmount = 1
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_fal_mmw_fal_sa58_762x51_20_blk.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_fal_mmw_fal_sa58_762x51_20_blk.mdl"
+
+ARC9.LoadAttachment(ATT, "eft_sa58_mag_20mmw_blk")
