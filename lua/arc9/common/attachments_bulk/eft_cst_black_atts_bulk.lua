@@ -2819,3 +2819,117 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_fal_mmw_fal_sa58
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_fal_mmw_fal_sa58_762x51_20_blk.mdl"
 
 ARC9.LoadAttachment(ATT, "eft_sa58_mag_20mmw_blk")
+
+
+
+///////////////////////////////////////      eft_mosin_stock_opfor_blk
+
+ATT = {}
+
+ATT.PrintName = "Mosin Rifle ProMag Archangel OPFOR PRS chassis"
+ATT.CompactName = "Archangel Mosin"
+ATT.Icon = Material("entities/eft_mosin_attachments/opfor_blk.png", "mips smooth")
+ATT.Description = [[The Archangel OPFOR PRS chassis for Mosin sniper rifle. The ergonomic gooseneck style grip with palm swells promotes maximum accuracy and comfort. Manufactured by ProMag.]]
+
+ATT.HasGrip = true
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mosin_opforstock_rlhik.mdl"
+ATT.LHIK = true
+ATT.RHIK = true
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_mosin_stock"}
+
+ATT.EFTErgoAdd = 40
+ATT.CustomPros = { Ergonomics = "+40" }
+ATT.RecoilMult = 0.62
+ATT.VisualRecoilMult = 0.62
+ATT.SpreadMult = 0.97
+
+ATT.SubMaterial23 = "models/weapons/arc9/darsu_eft/mods/stock_mosin_promag_archangel_opfor_prs_BLK"
+ATT.SubMaterial24 = "models/weapons/arc9/darsu_eft/mods/stock_mosin_promag_archangel_opfor_prs_rear_BLK"
+ATT.ActivateElements = {"eft_mosin_stock_opfor"}
+
+ATT.ExcludeElements = { "eft_mosin_barrel_200", "eft_mosin_barrel_220"}
+
+ARC9.LoadAttachment(ATT, "eft_mosin_stock_opfor_blk")
+
+
+///////////////////////////////////////      eft_sv98_chassis_wood_blk
+
+
+ATT = {}
+
+ATT.PrintName = "SV-98 wooden stock"
+ATT.CompactName = "SV-98"
+ATT.Icon = Material("entities/eft_sv98_attachments/wood_blk.png", "mips smooth")
+ATT.Description = [[A standard-issue wooden stock for the SV-98, manufactured by Izhmash.]]
+
+ATT.HasChassis = true
+ATT.HasGrip = true
+
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+ATT.RecoilMult = 0.8
+ATT.VisualRecoilMult = 0.8
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_sv98_rec"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Ribbon",
+        Category = "eft_sv98_ribbon",
+        Pos = Vector(-11, 0, -2),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Bipod",
+        Category = "eft_sv98_bipod",
+        Pos = Vector(-13, 0, 0.5),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ATT.SubMaterial3 = "models/weapons/arc9/darsu_eft/mods/stock_sv-98_izhmash_wood_front_BLK"
+ATT.SubMaterial2 = "models/weapons/arc9/darsu_eft/mods/stock_sv-98_izhmash_wood_back_BLK"
+ATT.ActivateElements = {"eft_sv98_chassis_wood"}
+
+
+ARC9.LoadAttachment(ATT, "eft_sv98_chassis_wood_blk")
+
+
+
+///////////////////////////////////////      eft_val_mag_20_blk
+
+ATT = {}
+
+ATT.PrintName = "VSS 9x39 6L25 20-round magazine"
+ATT.CompactName = "6L25 20"
+ATT.Icon = Material("entities/eft_val_attachments/20_blk.png", "mips smooth")
+ATT.Description = [[A 20-round polymer TsNIITochMash 6L25 9x39 magazine for the AS VAL special assault rifle.]]
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_val_mag"}
+
+ATT.ActivateElements = {"mag20"}
+
+ATT.ClipSize = 20
+ATT.ChamberSize = 1
+ATT.SuppressEmptySuffix = false 
+ATT.DropMagazineAmount = 1
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val_20_blk.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val_20_blk.mdl"
+
+ARC9.LoadAttachment(ATT, "eft_val_mag_20_blk")
