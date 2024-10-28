@@ -2933,3 +2933,168 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val_20_blk.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val_20_blk.mdl"
 
 ARC9.LoadAttachment(ATT, "eft_val_mag_20_blk")
+
+
+
+///////////////////////////////////////      eft_m1a_stock_arch_blk
+
+ATT = {}
+
+ATT.PrintName = "M1A ProMag Archangel chassis"
+ATT.CompactName = "Archangel"
+ATT.Icon = Material("entities/eft_m1a_attachments/m1a_promag_archangel_chassis_blk.png", "mips smooth")
+ATT.Description = "The Archangel polymer chassis for M1A rifles, manufactured by ProMag."
+
+ATT.EFTErgoAdd = 32
+ATT.CustomPros = { Ergonomics = "+32" }
+ATT.RecoilMult = 0.73
+ATT.VisualRecoilMult = 0.73
+ATT.HeatCapacityMult = 0.95
+
+ATT.HasGrip = true
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_m1a_stock"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_m1a_archangel_lhik.mdl"
+ATT.LHIK = true
+ATT.RHIK = true
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+ATT.SubMaterial10 = "models/weapons/arc9/darsu_eft/mods/stock_m1a_promag_archangel_prs_rear_BLK"
+ATT.SubMaterial11 = "models/weapons/arc9/darsu_eft/mods/stock_m1a_promag_archangel_prs_BLK"
+ATT.ActivateElements = {"eft_m1a_stock_arch"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Stock",
+        Category = "eft_m1a_upper",
+        Pos = Vector(-16, 0, -0.5),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "B Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_bipod"},
+        Pos = Vector(-20, 0, 1.77),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_m1a_stock_arch_blk")
+
+
+///////////////////////////////////////      eft_m1a_stock_sass_blk
+
+ATT = {}
+
+ATT.PrintName = "M14 TROY S.A.S.S. Chassis stock"
+ATT.CompactName = "S.A.S.S."
+ATT.Icon = Material("entities/eft_m1a_attachments/m14_troy_sass_chassis_stock_blk.png", "mips smooth")
+ATT.Description = "The TROY Semi-Automatic Sniper System chassis is designed to match the ergonomics of M16/M4 weapon systems. This modular quad-rail system allows unlimited mounting options and keeps all optics and sights mounted and undisturbed while field stripping."
+
+ATT.EFTErgoAdd = 28
+ATT.CustomPros = { Ergonomics = "+28" }
+ATT.RecoilMult = 0.93
+ATT.VisualRecoilMult = 0.93
+ATT.HeatCapacityMult = 0.89
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_m1a_stock"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_m1a_sass_lhik.mdl"
+ATT.LHIK = true
+ATT.RHIK = true
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+ATT.SubMaterial13 = "models/weapons/arc9/darsu_eft/mods/stock_m14_troy_sass_chassis_lower_BLK"
+ATT.SubMaterial14 = "models/weapons/arc9/darsu_eft/mods/stock_m14_troy_sass_chassis_upper_BLK"
+ATT.ActivateElements = {"eft_m1a_stock_sass"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
+        Pos = Vector(-5, 0, -1.98),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Backup",
+        Category = {"eft_backupmount", "eft_optic_small"},
+        Pos = Vector(-13, 0, -1.98),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 7
+    },
+
+    {
+        PrintName = "Stock",
+        Category = "eft_ar15_buffertube",
+        Pos = Vector(1.8, 0, -0.6),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Pistol grip",
+        Category = "eft_ar15_pgrip",
+        Pos = Vector(-0.69, 0, 1.95),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Grip",
+        Category = {"eft_foregrip_small"},
+        Pos = Vector(-12, 0, 1.3),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    }, 
+
+    
+    {
+        PrintName = "Rear sight",
+        Category = {"eft_ar_rearsight", "eft_rearsight"},
+        Pos = Vector(-0.5, 0, -1.98),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Front sight",
+        Category = {"eft_ar_frontsight", "eft_frontsight"},
+        Pos = Vector(-22, 0, -1.98),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Top Tactical",
+        Category = {"eft_tactical_top_big", "eft_tactical_top"},
+        Pos = Vector(-18, 0, -1.98),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "L Tactical",
+        Category = {"eft_tactical", "eft_tactical_top"},
+        Pos = Vector(-19, -1.15, -0.47),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "R Tactical",
+        Category = {"eft_tactical", "eft_tactical_top"},
+        Pos = Vector(-19, 1.15, -0.47),
+        Ang = Angle(0, 0, 90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Bottom Tactical",
+        Category = {"eft_tactical_top", "eft_bipod"},
+        Pos = Vector(-20, 0, 1.3),
+        Ang = Angle(0, 0, 180),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_m1a_stock_sass_blk")
