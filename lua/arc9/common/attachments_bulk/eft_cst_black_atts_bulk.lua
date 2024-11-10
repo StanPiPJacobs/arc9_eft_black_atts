@@ -1184,28 +1184,17 @@ ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.FoldSights = true
 
+
 ATT.Sights = {
     {
         Pos = Vector(0, 9.0, -1.577),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
-        RTScopeFOV = 36/3,
+        RTScopeFOV = 36/1,
         OnSwitchToSight = function(self, slottbl)
             if CLIENT then ARC9EFTdrawnumber("3x") end
         end,
-        RTScopeMagnification = 3,
-    },
-    {
-        Pos = Vector(0, 9.0, -1.577),
-        Ang = Angle(0, 0, 0),
-        Magnification = 1.15,
-        ViewModelFOV = 36,
-        RTScopeFOV = 36/9,
-        OnSwitchToSight = function(self, slottbl)
-            if CLIENT then ARC9EFTdrawnumber("9x") end
-        end,
-        RTScopeMagnification = 9,
     },
     {
         Pos = Vector(0, 9.2, -3.23),
@@ -1219,6 +1208,36 @@ ATT.Sights = {
         RTScopeMagnification = 1,
     },
 }
+
+local prevscroll = 0
+ATT.DrawFunc = function(swep, model, wm) 
+    if !wm then
+        -- swep:GetSight().slottbl.Address
+        local active = swep:GetInSights() and model.slottbl.Address == swep:GetActiveSightSlotTable().Address
+
+        if active then
+            local scrollevel = swep:GetSight().SmoothScrollLevel or 0
+            model:SetPoseParameter("switch", 1 - scrollevel)
+            
+
+            local roundedscroll = math.Round(scrollevel, 2)
+            if prevscroll != roundedscroll then
+                if roundedscroll == 1 then ARC9EFTdrawnumber("3x")
+                elseif roundedscroll == 0 then ARC9EFTdrawnumber("9x") end
+            end
+            prevscroll = roundedscroll
+        end
+    end
+end
+
+ATT.ZoomSound = false
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 6
+
+ATT.RTScopeMagnification = 3
+ATT.RTScopeMagnificationMin = 3
+ATT.RTScopeMagnificationMax = 9
+
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
@@ -1262,46 +1281,70 @@ ATT.CustomCons = { Ergonomics = "-4" }
 
 ATT.FoldSights = true
 
-local Reticle0 = Material("vgui/arc9_eft_shared/reticles/scope_30mm_sig_tango6t_1_6x24_LOD0_mark_1.png", "mips smooth")
-local Reticle1 = Material("vgui/arc9_eft_shared/reticles/scope_30mm_sig_tango6t_1_6x24_LOD0_mark_6.png", "mips smooth")
-
 ATT.Sights = {
     {
-        Pos = Vector(0, 15, 0),
-        Ang = Angle(0, 0, 0),
-        Magnification = 1.15,
-        ViewModelFOV = 36,
-        RTScopeFOV = 36/6,
-        Reticle = Reticle1,
-        OnSwitchToSight = function(self, slottbl)
-            if CLIENT then ARC9EFTdrawnumber("6x") end
-        end,
-        RTScopeMagnification = 6,
-    },
-    {
-        Pos = Vector(0, 15, 0),
+        Pos = Vector(0, 15.5, 0),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
         RTScopeFOV = 36/1,
-        Reticle = Reticle0,
-        OnSwitchToSight = function(self, slottbl)
-            if CLIENT then ARC9EFTdrawnumber("1x") end
-        end,
-        RTScopeMagnification = 1,
     },
 }
 
+local prevscroll = 0
 ATT.DrawFunc = function(swep, model, wm) 
     if !wm then
-        model:SetBodygroup(1, 1-swep:GetMultiSight()+1)
+        -- swep:GetSight().slottbl.Address
+        local active = swep:GetInSights() and model.slottbl.Address == swep:GetActiveSightSlotTable().Address
+
+        if active then
+            local scrollevel = swep:GetSight().SmoothScrollLevel or 0
+            model:SetPoseParameter("switch", 1 - scrollevel)
+            
+
+            local roundedscroll = math.Round(scrollevel, 2)
+            if prevscroll != roundedscroll then
+                if roundedscroll == 1 then ARC9EFTdrawnumber("1x")
+                elseif roundedscroll == 0 then ARC9EFTdrawnumber("6x") end
+            end
+            prevscroll = roundedscroll
+        end
     end
 end
+
+local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/tango6t_f.png", "mips")
+local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/tango6t_q.png", "mips")
+
+local scale = 1
+local finalsize = 8 * scale
+ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
+    local scrollevel = sight.SmoothScrollLevel or 0
+    local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
+    local mat = Reticle_full
+
+    if scrollevel <= 0.6 then 
+        size = size / 4
+        mat = Reticle_quarter
+    end
+
+    surface.SetMaterial(mat)
+    surface.SetDrawColor(255, 255, 255)
+    -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -swep.ViewModelAng.z + sight.Ang.z)
+end
+
+ATT.ZoomSound = false
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 6
+
+ATT.RTScopeMagnification = 1
+ATT.RTScopeMagnificationMin = 1
+ATT.RTScopeMagnificationMax = 6
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 12
-ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_30mm_sig_tango6t_1_6x24_LOD0_mark_6.png", "mips smooth")
+ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/empty.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
@@ -1342,30 +1385,38 @@ ATT.Sights = {
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
-        RTScopeFOV = 36/6,
-        OnSwitchToSight = function(self, slottbl)
-            if CLIENT then ARC9EFTdrawnumber("6x") end
-        end,
-        RTScopeMagnification = 6,
-    },
-    {
-        Pos = Vector(0, 12.9, 0),
-        Ang = Angle(0, 0, 0),
-        Magnification = 1.15,
-        ViewModelFOV = 36,
         RTScopeFOV = 36/1,
-        OnSwitchToSight = function(self, slottbl)
-            if CLIENT then ARC9EFTdrawnumber("1x") end
-        end,
-        RTScopeMagnification = 1,
     },
 }
 
+local prevscroll = 0
 ATT.DrawFunc = function(swep, model, wm) 
     if !wm then
-        model:SetBodygroup(1, swep:GetMultiSight()-1)
+        -- swep:GetSight().slottbl.Address
+        local active = swep:GetInSights() and model.slottbl.Address == swep:GetActiveSightSlotTable().Address
+
+        if active then
+            local scrollevel = swep:GetSight().SmoothScrollLevel or 0
+            model:SetPoseParameter("switch", 1 - scrollevel)
+            
+
+            local roundedscroll = math.Round(scrollevel, 2)
+            if prevscroll != roundedscroll then
+                if roundedscroll == 1 then ARC9EFTdrawnumber("1x")
+                elseif roundedscroll == 0 then ARC9EFTdrawnumber("6x") end
+            end
+            prevscroll = roundedscroll
+        end
     end
 end
+
+ATT.ZoomSound = false
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 5
+
+ATT.RTScopeMagnification = 1
+ATT.RTScopeMagnificationMin = 1
+ATT.RTScopeMagnificationMax = 6
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
@@ -1391,10 +1442,10 @@ ARC9.LoadAttachment(ATT, "eft_scope_30mm_razor_blk")
 
 ATT = {}
 
-ATT.PrintName = "Schmidt & Bender PM II 3-12x50 34mm riflescope"
-ATT.CompactName = "PM II 3-12x50"
+ATT.PrintName = "Schmidt & Bender PM II 3-20x50 34mm riflescope"
+ATT.CompactName = "PM II 3-20x50"
 ATT.Icon = Material("entities/eft_attachments/scopes/30mmpmii18x24_blk.png", "mips smooth")
-ATT.Description = [[The Schmidt & Bender PM II 3-12x50 riflescope was originally created for elite military forces for high-quality target acquisition and pinpoint accuracy.]]
+ATT.Description = [[The Schmidt & Bender PM II 3-20x50 riflescope was originally created for elite military forces for high-quality target acquisition and pinpoint accuracy.]]
 ATT.SortOrder = 3
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_sb_pm_ii_3_12x50_blk.mdl"
@@ -1407,46 +1458,71 @@ ATT.CustomCons = { Ergonomics = "-6" }
 
 ATT.FoldSights = true
 
-local Reticle0 = Material("vgui/arc9_eft_shared/reticles/scope_34mm_s&b_pm_ii_3_12x50_LOD0_mark_3.png", "mips smooth")
-local Reticle1 = Material("vgui/arc9_eft_shared/reticles/scope_34mm_s&b_pm_ii_3_12x50_LOD0_mark_12.png", "mips smooth")
-
 ATT.Sights = {
     {
         Pos = Vector(0, 13.2, 0),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
-        RTScopeFOV = 36/12,
-        Reticle = Reticle1,
-        OnSwitchToSight = function(self, slottbl)
-            if CLIENT then ARC9EFTdrawnumber("12x") end
-        end,
-        RTScopeMagnification = 12,
-    },
-    {
-        Pos = Vector(0, 13.2, 0),
-        Ang = Angle(0, 0, 0),
-        Magnification = 1.15,
-        ViewModelFOV = 36,
-        RTScopeFOV = 36/3,
-        Reticle = Reticle0,
-        OnSwitchToSight = function(self, slottbl)
-            if CLIENT then ARC9EFTdrawnumber("3x") end
-        end,
-        RTScopeMagnification = 3,
+        RTScopeFOV = 36/1,
     },
 }
 
+
+local prevscroll = 0
 ATT.DrawFunc = function(swep, model, wm) 
     if !wm then
-        model:SetBodygroup(1, swep:GetMultiSight()-1)
+        -- swep:GetSight().slottbl.Address
+        local active = swep:GetInSights() and model.slottbl.Address == swep:GetActiveSightSlotTable().Address
+
+        if active then
+            local scrollevel = swep:GetSight().SmoothScrollLevel or 0
+            model:SetPoseParameter("switch", 1 - scrollevel)
+            
+
+            local roundedscroll = math.Round(scrollevel, 2)
+            if prevscroll != roundedscroll then
+                if roundedscroll == 1 then ARC9EFTdrawnumber("3x")
+                elseif roundedscroll == 0 then ARC9EFTdrawnumber("20x") end
+            end
+            prevscroll = roundedscroll
+        end
     end
 end
+
+local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/SB_PM_II_3-12x50_mark_f.png", "mips")
+local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/SB_PM_II_3-12x50_mark_q.png", "mips")
+
+local scale = 1
+local finalsize = 11 * scale
+ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
+    local scrollevel = sight.SmoothScrollLevel or 0
+    local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
+    local mat = Reticle_full
+
+    if scrollevel <= 0.7 then 
+        size = size / 4
+        mat = Reticle_quarter
+    end
+
+    surface.SetMaterial(mat)
+    surface.SetDrawColor(255, 255, 255)
+    -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -swep.ViewModelAng.z + sight.Ang.z)
+end
+
+ATT.ZoomSound = false
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 12
+
+ATT.RTScopeMagnification = 3
+ATT.RTScopeMagnificationMin = 3
+ATT.RTScopeMagnificationMax = 20
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 12
-ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_34mm_s&b_pm_ii_5_25x56_LOD0_mark_5.png", "mips smooth")
+ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/empty.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.27
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
@@ -1480,46 +1556,71 @@ ATT.CustomCons = { Ergonomics = "-8" }
 
 ATT.FoldSights = true
 
-local Reticle0 = Material("vgui/arc9_eft_shared/reticles/scope_34mm_s&b_pm_ii_5_25x56_LOD0_mark_5.png", "mips smooth")
-local Reticle1 = Material("vgui/arc9_eft_shared/reticles/scope_34mm_s&b_pm_ii_5_25x56_LOD0_mark_25.png", "mips smooth")
-
 ATT.Sights = {
     {
         Pos = Vector(0, 11.9, 0),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
-        RTScopeFOV = 36/25,
-        Reticle = Reticle1,
-        OnSwitchToSight = function(self, slottbl)
-            if CLIENT then ARC9EFTdrawnumber("25x") end
-        end,
-        RTScopeMagnification = 25,
-    },
-    {
-        Pos = Vector(0, 11.9, 0),
-        Ang = Angle(0, 0, 0),
-        Magnification = 1.15,
-        ViewModelFOV = 36,
-        RTScopeFOV = 36/5,
-        Reticle = Reticle0,
-        OnSwitchToSight = function(self, slottbl)
-            if CLIENT then ARC9EFTdrawnumber("5x") end
-        end,
-        RTScopeMagnification = 5,
+        RTScopeFOV = 36/1,
     },
 }
 
+
+local prevscroll = 0
 ATT.DrawFunc = function(swep, model, wm) 
     if !wm then
-        model:SetBodygroup(1, swep:GetMultiSight()-1)
+        -- swep:GetSight().slottbl.Address
+        local active = swep:GetInSights() and model.slottbl.Address == swep:GetActiveSightSlotTable().Address
+
+        if active then
+            local scrollevel = swep:GetSight().SmoothScrollLevel or 0
+            model:SetPoseParameter("switch", 1 - scrollevel)
+            
+
+            local roundedscroll = math.Round(scrollevel, 2)
+            if prevscroll != roundedscroll then
+                if roundedscroll == 1 then ARC9EFTdrawnumber("5x")
+                elseif roundedscroll == 0 then ARC9EFTdrawnumber("25x") end
+            end
+            prevscroll = roundedscroll
+        end
     end
 end
+
+local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/SB_PM_II_5-25x56_mark_f.png", "mips")
+local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/SB_PM_II_5-25x56_mark_q.png", "mips")
+
+local scale = 1
+local finalsize = 12 * scale
+ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
+    local scrollevel = sight.SmoothScrollLevel or 0
+    local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
+    local mat = Reticle_full
+
+    if scrollevel <= 0.7 then 
+        size = size / 4
+        mat = Reticle_quarter
+    end
+
+    surface.SetMaterial(mat)
+    surface.SetDrawColor(255, 255, 255)
+    -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -swep.ViewModelAng.z + sight.Ang.z)
+end
+
+ATT.ZoomSound = false
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 12
+
+ATT.RTScopeMagnification = 5
+ATT.RTScopeMagnificationMin = 5
+ATT.RTScopeMagnificationMax = 25
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 12
-ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_34mm_s&b_pm_ii_5_25x56_LOD0_mark_5.png", "mips smooth")
+ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/empty.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
@@ -1527,7 +1628,6 @@ ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true 
 
 ATT.ScopeScreenRatio = 693/1080
-
 
 ARC9.LoadAttachment(ATT, "eft_scope_34mm_sb_pmii5_blk")
 
@@ -1553,46 +1653,72 @@ ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.FoldSights = true
 
-local Reticle0 = Material("vgui/arc9_eft_shared/reticles/scope_30mm_s&b_pm_ii_1_8x24_LOD0_mark_1.png", "mips smooth")
-local Reticle1 = Material("vgui/arc9_eft_shared/reticles/scope_30mm_s&b_pm_ii_1_8x24_LOD0_mark_8.png", "mips smooth")
-
 ATT.Sights = {
     {
         Pos = Vector(0, 16.15, 0),
         Ang = Angle(0, 0, 0),
         Magnification = 1.15,
         ViewModelFOV = 36,
-        RTScopeFOV = 36/8,
-        Reticle = Reticle1,
-        OnSwitchToSight = function(self, slottbl)
-            if CLIENT then ARC9EFTdrawnumber("8x") end
-        end,
-        RTScopeMagnification = 8,
-    },
-    {
-        Pos = Vector(0, 16.15, 0),
-        Ang = Angle(0, 0, 0),
-        Magnification = 1.15,
-        ViewModelFOV = 36,
         RTScopeFOV = 36/1,
-        Reticle = Reticle0,
-        OnSwitchToSight = function(self, slottbl)
-            if CLIENT then ARC9EFTdrawnumber("1x") end
-        end,
-        RTScopeMagnification = 1,
     },
 }
 
+
+local prevscroll = 0
 ATT.DrawFunc = function(swep, model, wm) 
     if !wm then
-        model:SetBodygroup(1, swep:GetMultiSight()-1)
+        -- swep:GetSight().slottbl.Address
+        local active = swep:GetInSights() and model.slottbl.Address == swep:GetActiveSightSlotTable().Address
+
+        if active then
+            local scrollevel = swep:GetSight().SmoothScrollLevel or 0
+            model:SetPoseParameter("switch", 1 - scrollevel)
+            
+
+            local roundedscroll = math.Round(scrollevel, 2)
+            if prevscroll != roundedscroll then
+                if roundedscroll == 1 then ARC9EFTdrawnumber("1x")
+                elseif roundedscroll == 0 then ARC9EFTdrawnumber("8x") end
+            end
+            prevscroll = roundedscroll
+        end
     end
 end
+
+local Reticle_full = Material("vgui/arc9_eft_shared/reticles/adjustable/PM_II_1-8x24_mark_f.png", "mips")
+local Reticle_quarter = Material("vgui/arc9_eft_shared/reticles/adjustable/PM_II_1-8x24_mark_q.png", "mips")
+
+local scale = 1
+local finalsize = 10 * scale
+ATT.RTScopeDrawFunc = function(swep, rtsize, sight) 
+    local scrollevel = sight.SmoothScrollLevel or 0
+    local size = (rtsize + rtsize * (1 - scrollevel) * finalsize) * scale
+    local mat = Reticle_full
+
+    if scrollevel <= 0.7 then 
+        size = size / 4
+        mat = Reticle_quarter
+    end
+
+    surface.SetMaterial(mat)
+    surface.SetDrawColor(255, 255, 255)
+    -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
+    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -swep.ViewModelAng.z + sight.Ang.z)
+end
+
+ATT.ZoomSound = false
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 8
+
+ATT.RTScopeMagnification = 1
+ATT.RTScopeMagnificationMin = 1
+ATT.RTScopeMagnificationMax = 8
+
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 12
-ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_30mm_s&b_pm_ii_1_8x24_LOD0_mark_1.png", "mips smooth")
+ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/empty.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.23
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
@@ -3098,3 +3224,96 @@ ATT.Attachments = {
 
 
 ARC9.LoadAttachment(ATT, "eft_m1a_stock_sass_blk")
+
+
+
+
+///////////////////////////////////////      eft_mp9_blk
+
+ATT = {}
+
+ATT.PrintName = "Black"
+ATT.CompactName = "Black"
+ATT.Icon = Material("entities/eft_attachments/arc9_eft_mp9_blk.png", "mips smooth")
+ATT.Description = [[Black color instead of FDE (?) for MP9.
+
+Not presents in EFT. Part of BLACK ATTS addon.]]
+
+ATT.SortOrder = -90
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+-- ATT.ExcludeElements = {"eft_aug_blk"}
+
+ATT.Category = {"eft_custom_slot_mp9"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Custom slot",
+        Pos = Vector(0, 0, 1),
+        Ang = Angle(0, 0, 0),
+        Category = {"eft_custom_slot", "eft_custom_slot_mp9"},
+ 
+    },
+}
+
+ATT.SubMaterial2 = "models/weapons/arc9/darsu_eft/mods/weapon_bt_mp9_9x19_BLK"
+
+ARC9.LoadAttachment(ATT, "eft_mp9_blk")
+
+
+
+
+--///////////////////////////////////////      eft_extras_alt_pistol4_hold
+
+
+--[[
+
+ATT = {}
+
+ATT.PrintName = "Alternative viewmodel position (For pistols 4)"
+ATT.CompactName = "Pistol hold 4"
+ATT.Icon = Material("entities/eft_extras_attachments/mw.png", "mips smooth")
+ATT.Description = [[negrism
+
+eft extras attachment]]
+
+--[[
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.AttNotForNPCs = true 
+
+ATT.ViewModelFOVBase = 70
+ATT.ActivePos = Vector(-0.65, -5, -6.2)
+ATT.ActiveAng = Angle(0, 0, -80)
+ATT.SightPos = Vector(-2.15, -7, -6.2)
+ATT.SightAng = Angle(0, 0, -80)
+ATT.ReloadPos = Vector(-3, -3, -1)
+ATT.ReloadAng = Angle(0, 0, -65)
+ATT.SprintAng = Angle(-2, 30, -7)
+ATT.SprintPos = Vector(-1, -4, -10)
+ATT.CrouchPos = Vector(0, -2, -0.2)
+ATT.CrouchAng = Angle(0, 0, -6)
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/fg_afg.mdl"
+ATT.ModelOffset = Vector(-20,-50,-50)
+ATT.ModelAngleOffset = Angle(90,180,90)
+
+ATT.HoldTypeDefault = "pistol"
+ATT.HoldTypeSprint = "pistol"
+ATT.HoldTypeHolstered = "pistol"
+ATT.HoldTypeSights = "pistol"
+
+ATT.LHIK = true
+ATT.LHIK_Priority  = 3
+
+ATT.Attachments = {
+    {
+        PrintName = "Custom slot",
+        Pos = Vector(0, 0, 1),
+        Ang = Angle(0, 0, 0),
+        Category = {"eft_custom_slot"},
+    },
+}
+
+ATT.Category = {"eft_custom_slot"}
+ARC9.LoadAttachment(ATT, "eft_extras_alt_pistol4_hold")
+]]
