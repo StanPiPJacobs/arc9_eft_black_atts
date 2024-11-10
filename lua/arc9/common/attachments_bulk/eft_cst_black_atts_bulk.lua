@@ -7,7 +7,9 @@ ATT = {}
 
 ATT.PrintName = "RTM Pillau P-2 tactical foregrip"
 ATT.CompactName = "P-2"
-ATT.Description = [[The Pillau second generation lightweight aluminum tactical grip. Manufactured by RTM. Black color version.]]
+ATT.Description = [[The Pillau second generation lightweight aluminum tactical grip. Manufactured by RTM. Black color version.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.Icon = Material("entities/eft_attachments/foregrips/pillau2_blk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/fg_pillau_p2.mdl"
@@ -35,7 +37,9 @@ ATT = {}
 
 ATT.PrintName = "HK Sturmgriff foregrip"
 ATT.CompactName = "Sturmgriff"
-ATT.Description = [[The Sturmgriff vertical foregrip. Manufactured by Heckler & Koch.]]
+ATT.Description = [[The Sturmgriff vertical foregrip. Manufactured by Heckler & Koch.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.Icon = Material("entities/eft_attachments/foregrips/sturm_blk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/fg_sturmgriff.mdl"
@@ -70,7 +74,9 @@ ATT = {}
 
 ATT.PrintName = "AR-15 F1 Firearms Skeletonized Style 2 PC pistol grip"
 ATT.CompactName = "F1 St2 PC"
-ATT.Description = [[A lightweight ergonomical pistol grip with finger grooves for AR-15 weapon systems, manufactured by F1 Firearms. Wrapped with paracord for maximum comfort and minimum hand slip.]]
+ATT.Description = [[A lightweight ergonomical pistol grip with finger grooves for AR-15 weapon systems, manufactured by F1 Firearms. Wrapped with paracord for maximum comfort and minimum hand slip.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.Icon = Material("entities/eft_attachments/pgrips/ar15grips/f1s2pc_blk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_f1_firearms_st2_pc_skeletonized.mdl"
@@ -95,7 +101,9 @@ ATT = {}
 
 ATT.PrintName = "AR-15 F1 Firearms Skeletonized Style 2 PC pistol grip"
 ATT.CompactName = "F1 St2 PC"
-ATT.Description = [[A lightweight ergonomical pistol grip with finger grooves for AR-15 weapon systems, manufactured by F1 Firearms. Wrapped with paracord for maximum comfort and minimum hand slip.]]
+ATT.Description = [[A lightweight ergonomical pistol grip with finger grooves for AR-15 weapon systems, manufactured by F1 Firearms. Wrapped with paracord for maximum comfort and minimum hand slip.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.Icon = Material("entities/eft_attachments/pgrips/ar15grips/f1s2pc_red.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_f1_firearms_st2_pc_skeletonized.mdl"
@@ -120,7 +128,9 @@ ATT = {}
 
 ATT.PrintName = "AR-15 F1 Firearms Skeletonized Style 2 PC pistol grip"
 ATT.CompactName = "F1 St2 PC"
-ATT.Description = [[A lightweight ergonomical pistol grip with finger grooves for AR-15 weapon systems, manufactured by F1 Firearms. Wrapped with paracord for maximum comfort and minimum hand slip.]]
+ATT.Description = [[A lightweight ergonomical pistol grip with finger grooves for AR-15 weapon systems, manufactured by F1 Firearms. Wrapped with paracord for maximum comfort and minimum hand slip.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.Icon = Material("entities/eft_attachments/pgrips/ar15grips/f1s2pc_wht.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_f1_firearms_st2_pc_skeletonized.mdl"
@@ -144,7 +154,9 @@ ATT = {}
 
 ATT.PrintName = "AR-15 F1 Firearms Skeletonized Style 2 PC pistol grip"
 ATT.CompactName = "F1 St2 PC"
-ATT.Description = [[A lightweight ergonomical pistol grip with finger grooves for AR-15 weapon systems, manufactured by F1 Firearms. Wrapped with paracord for maximum comfort and minimum hand slip.]]
+ATT.Description = [[A lightweight ergonomical pistol grip with finger grooves for AR-15 weapon systems, manufactured by F1 Firearms. Wrapped with paracord for maximum comfort and minimum hand slip.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.Icon = Material("entities/eft_attachments/pgrips/ar15grips/f1s2pc_camo.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_f1_firearms_st2_pc_skeletonized.mdl"
@@ -181,7 +193,9 @@ ATT = {}
 
 ATT.PrintName = "AR-15 HK V2 pistol grip"
 ATT.CompactName = "HK V2"
-ATT.Description = [[The HK V2 pistol grip can be installed on any weapon compatible with AR-15 grips. Manufactured by Heckler & Koch.]]
+ATT.Description = [[The HK V2 pistol grip can be installed on any weapon compatible with AR-15 grips. Manufactured by Heckler & Koch.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.Icon = Material("entities/eft_attachments/pgrips/ar15grips/hkv2_blk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_hk_grip_v2.mdl"
@@ -207,7 +221,9 @@ ATT = {}
 
 ATT.PrintName = "AR-15 Magpul MIAD pistol grip (BLK)"
 ATT.CompactName = "MIAD"
-ATT.Description = [[The Magpul MIAD (Mission Adaptable) polymer pistol grip can be installed on any weapon compatible with AR-15 grips. Black version.]]
+ATT.Description = [[The Magpul MIAD (Mission Adaptable) polymer pistol grip can be installed on any weapon compatible with AR-15 grips. Black version.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.Icon = Material("entities/eft_attachments/pgrips/ar15grips/miad_blk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_magpul_miad_gen_1_fde.mdl"
@@ -232,7 +248,9 @@ ATT = {}
 
 ATT.PrintName = "AR-15 SIG M400 Reduced Angle Pistol Grip (Black) "
 ATT.CompactName = "M400"
-ATT.Description = [[The polymer M400 Reduced Angle Pistol Grip fits any weapon compatible with AR-15 system. Manufactured by SIG Sauer. Black version.]]
+ATT.Description = [[The polymer M400 Reduced Angle Pistol Grip fits any weapon compatible with AR-15 system. Manufactured by SIG Sauer. Black version.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.Icon = Material("entities/eft_attachments/pgrips/ar15grips/siggrip_blk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_ar15_sig_reduced_angle.mdl"
@@ -264,7 +282,9 @@ ATT = {}
 
 ATT.PrintName = "AR-15 Magpul MOE SL-K buttstock (Black)"
 ATT.CompactName = "MOE SL-K"
-ATT.Description = [[A quick-detach buttstock for AR-15/M16 rifles with mil-spec buffer tube. Manufactured by Magpul Original Equipment. Black version.]]
+ATT.Description = [[A quick-detach buttstock for AR-15/M16 rifles with mil-spec buffer tube. Manufactured by Magpul Original Equipment. Black version.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.Icon = Material("entities/eft_attachments/stocks/slk_blk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_magpul_moe_sl_k.mdl"
@@ -299,7 +319,9 @@ ATT = {}
 
 ATT.PrintName = "AN/PEQ-15 tactical device"
 ATT.CompactName = "AN/PEQ-15"
-ATT.Description = [[The Advanced Target Pointer Illuminator Aiming Laser (ATPIAL) produced by L3 Technologies is a rugged, combat-proven and easy-to-use aiming system with integrated infrared and visible aim lasers as well as an infrared illuminator.]]
+ATT.Description = [[The Advanced Target Pointer Illuminator Aiming Laser (ATPIAL) produced by L3 Technologies is a rugged, combat-proven and easy-to-use aiming system with integrated infrared and visible aim lasers as well as an infrared illuminator.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.Icon = Material("entities/eft_attachments/tactical/peq15_blk.png", "mips smooth")
 
@@ -369,7 +391,9 @@ ATT = {}
 
 ATT.PrintName = "AN/PEQ-15 tactical device"
 ATT.CompactName = "AN/PEQ-15"
-ATT.Description = [[The Advanced Target Pointer Illuminator Aiming Laser (ATPIAL) produced by L3 Technologies is a rugged, combat-proven and easy-to-use aiming system with integrated infrared and visible aim lasers as well as an infrared illuminator.]]
+ATT.Description = [[The Advanced Target Pointer Illuminator Aiming Laser (ATPIAL) produced by L3 Technologies is a rugged, combat-proven and easy-to-use aiming system with integrated infrared and visible aim lasers as well as an infrared illuminator.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.Icon = Material("entities/eft_attachments/tactical/peq15_gray.png", "mips smooth")
 
@@ -439,7 +463,9 @@ ATT = {}
 
 ATT.PrintName = "LA-5B/PEQ tactical device"
 ATT.CompactName = "LA-5B/PEQ"
-ATT.Description = [[The Advanced Target Pointer Illuminator Aiming Laser (ATPIAL) produced by L3 Technologies is a rugged, combat-proven and easy-to-use aiming system with integrated infrared and visible aim lasers as well as an infrared illuminator.]]
+ATT.Description = [[The Advanced Target Pointer Illuminator Aiming Laser (ATPIAL) produced by L3 Technologies is a rugged, combat-proven and easy-to-use aiming system with integrated infrared and visible aim lasers as well as an infrared illuminator.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.Icon = Material("entities/eft_attachments/tactical/la5b_blk.png", "mips smooth")
 
@@ -509,7 +535,9 @@ ATT = {}
 
 ATT.PrintName = "LA-5B/PEQ tactical device"
 ATT.CompactName = "LA-5B/PEQ"
-ATT.Description = [[The Advanced Target Pointer Illuminator Aiming Laser (ATPIAL) produced by L3 Technologies is a rugged, combat-proven and easy-to-use aiming system with integrated infrared and visible aim lasers as well as an infrared illuminator.]]
+ATT.Description = [[The Advanced Target Pointer Illuminator Aiming Laser (ATPIAL) produced by L3 Technologies is a rugged, combat-proven and easy-to-use aiming system with integrated infrared and visible aim lasers as well as an infrared illuminator.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.Icon = Material("entities/eft_attachments/tactical/la5b_gray.png", "mips smooth")
 
@@ -581,7 +609,9 @@ ATT = {}
 
 ATT.PrintName = "Holosun LS321 Tactical device"
 ATT.CompactName = "LS321"
-ATT.Description = [[Holosun LS321 is a multi-laser tactical device with green laser in the visible light spectrum, IR laser and IR searchlight.]]
+ATT.Description = [[Holosun LS321 is a multi-laser tactical device with green laser in the visible light spectrum, IR laser and IR searchlight.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.Icon = Material("entities/eft_attachments/tactical/ls321_blk.png", "mips smooth")
 
@@ -661,7 +691,9 @@ ATT = {}
 
 ATT.PrintName = "Holosun LS321 Tactical device"
 ATT.CompactName = "LS321"
-ATT.Description = [[Holosun LS321 is a multi-laser tactical device with green laser in the visible light spectrum, IR laser and IR searchlight.]]
+ATT.Description = [[Holosun LS321 is a multi-laser tactical device with green laser in the visible light spectrum, IR laser and IR searchlight.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.Icon = Material("entities/eft_attachments/tactical/ls321_gray.png", "mips smooth")
 
@@ -742,7 +774,9 @@ ATT = {}
 
 ATT.PrintName = "Insight WMX200 tactical flashlight"
 ATT.CompactName = "WMX200"
-ATT.Description = [[The WMX200 tactical flashlight manufactured by Insight Technologies, which combines a conventional flashlight and an IR searchlight.]]
+ATT.Description = [[The WMX200 tactical flashlight manufactured by Insight Technologies, which combines a conventional flashlight and an IR searchlight.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.Icon = Material("entities/eft_attachments/tactical/wmx200_blk.png", "mips smooth")
 
@@ -803,7 +837,9 @@ ATT = {}
 
 ATT.PrintName = "Wilcox RAPTAR ES Tactical Rangefinder"
 ATT.CompactName = "RAPTAR"
-ATT.Description = [[The early generation of the tactical device called "RAPTAR" combined with a rangefinder. It has visible and IR lasers, as well as an infrared illuminator.]]
+ATT.Description = [[The early generation of the tactical device called "RAPTAR" combined with a rangefinder. It has visible and IR lasers, as well as an infrared illuminator.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.Icon = Material("entities/eft_attachments/tactical/raptar_blk.png", "mips smooth")
 
@@ -970,7 +1006,9 @@ ATT = {}
 ATT.PrintName = "Recknagel Era-Tac Sunshade mount for Aimpoint"
 ATT.CompactName = "T-1 Sun"
 ATT.Icon = Material("entities/eft_attachments/scopes/t1sun_blk.png", "mips smooth")
-ATT.Description = [[The Recknagel Era-Tac Sunshade mount for the Aimpoint Micro T-1 reflex sight.]]
+ATT.Description = [[The Recknagel Era-Tac Sunshade mount for the Aimpoint Micro T-1 reflex sight.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/mount_all_recknagel_era_tac_aimpoint_t1_sunshade_mount_BLK"
 
@@ -1006,7 +1044,9 @@ ATT = {}
 ATT.PrintName = "Recknagel Era-Tac 30mm ring scope mount"
 ATT.CompactName = "RN 30mm ET"
 ATT.Icon = Material("entities/eft_attachments/scopes/30mmrecknagel_blk.png", "mips smooth")
-ATT.Description = [[The Recknagel Era-Tac is a versatile base for mounting 30mm riflescopes. Equipped with additional top mounts for installation of various tactical equipment.]]
+ATT.Description = [[The Recknagel Era-Tac is a versatile base for mounting 30mm riflescopes. Equipped with additional top mounts for installation of various tactical equipment.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/mount_all_recknagel_era_tac_one_piece_mount_30mm_BLK"
 
@@ -1052,7 +1092,9 @@ ATT = {}
 ATT.PrintName = "Recknagel Era-Tac 34mm ring scope mount"
 ATT.CompactName = "RN 34mm ET"
 ATT.Icon = Material("entities/eft_attachments/scopes/34mmeratac_blk.png", "mips smooth")
-ATT.Description = [[The Recknagel Era-Tac is a versatile base for mounting 34mm riflescopes. Equipped with additional top mounts for installation of various tactical equipment.]]
+ATT.Description = [[The Recknagel Era-Tac is a versatile base for mounting 34mm riflescopes. Equipped with additional top mounts for installation of various tactical equipment.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/mount_all_recknagel_era_tac_one_piece_mount_30mm_BLK"
 
@@ -1100,7 +1142,9 @@ ATT = {}
 ATT.PrintName = "AI AX-50 34mm scope mount"
 ATT.CompactName = "AX-50 34mm"
 ATT.Icon = Material("entities/eft_attachments/scopes/34mmax50_blk.png", "mips smooth")
-ATT.Description = [[An universal 34mm scope base mount for installation on Picatinny rails, allows installation of various optics. Manufactured by Accuracy International.]]
+ATT.Description = [[An universal 34mm scope base mount for installation on Picatinny rails, allows installation of various optics. Manufactured by Accuracy International.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/mount_all_accuracy_international_ax50_scope_mount_34mm_BLK"
 
@@ -1134,7 +1178,9 @@ ATT = {}
 ATT.PrintName = "SIG ALPHA4 30mm ring scope mount"
 ATT.CompactName = "ALPHA4 30mm"
 ATT.Icon = Material("entities/eft_attachments/scopes/alpha4mount_blk.png", "mips smooth")
-ATT.Description = [[A mount for 30mm riflescopes, installed on Weaver/Picatinny type rails. Manufactured by SIG Sauer.]]
+ATT.Description = [[A mount for 30mm riflescopes, installed on Weaver/Picatinny type rails. Manufactured by SIG Sauer.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/mount_all_sig_alpha4_ultralight_30mm_BLK"
 
@@ -1170,7 +1216,9 @@ ATT.PrintName = "NcSTAR ADO P4 Sniper 3-9x42 riflescope"
 ATT.CompactName = "ADO P4"
 ATT.Icon = Material("entities/eft_attachments/scopes/adop4_blk.png", "mips smooth")
 ATT.Description = [[The Advance Dual Optic (ADO) 3X-9X variable magnification scope with a 42mm objective lens. The ADO Scope features an integrated Red Dot Reflex Optic on top of the scope body. 
-Manufactured by NcSTAR.]]
+Manufactured by NcSTAR.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 3
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_ncstar_advance_dual_blk.mdl"
@@ -1268,7 +1316,9 @@ ATT = {}
 ATT.PrintName = "SIG TANGO6T 1-6x24 30mm riflescope"
 ATT.CompactName = "TANGO6T"
 ATT.Icon = Material("entities/eft_attachments/scopes/tango_blk.png", "mips smooth")
-ATT.Description = [[The TANGO6T is a rugged and well-built low power variable optic. This model features a 1x to 6x magnification and a first focal plane reticle. This rifle scope is ideal for short and medium distances, as well as for backcountry hunting. Manufactured by SIG Sauer.]]
+ATT.Description = [[The TANGO6T is a rugged and well-built low power variable optic. This model features a 1x to 6x magnification and a first focal plane reticle. This rifle scope is ideal for short and medium distances, as well as for backcountry hunting. Manufactured by SIG Sauer.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 3
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_sig_tango6t_blk.mdl"
@@ -1366,7 +1416,9 @@ ATT = {}
 ATT.PrintName = "Vortex Razor HD Gen.2 1-6x24 30mm riflescope"
 ATT.CompactName = "Razor HD Gen.2"
 ATT.Icon = Material("entities/eft_attachments/scopes/30mmrazor_blk.png", "mips smooth")
-ATT.Description = [[A tactical riflescope designed for quick target acquisition and maximum precision. Manufactured by Vortex Optics.]]
+ATT.Description = [[A tactical riflescope designed for quick target acquisition and maximum precision. Manufactured by Vortex Optics.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 3
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_razor_hd_blk.mdl"
@@ -1445,7 +1497,9 @@ ATT = {}
 ATT.PrintName = "Schmidt & Bender PM II 3-20x50 34mm riflescope"
 ATT.CompactName = "PM II 3-20x50"
 ATT.Icon = Material("entities/eft_attachments/scopes/30mmpmii18x24_blk.png", "mips smooth")
-ATT.Description = [[The Schmidt & Bender PM II 3-20x50 riflescope was originally created for elite military forces for high-quality target acquisition and pinpoint accuracy.]]
+ATT.Description = [[The Schmidt & Bender PM II 3-20x50 riflescope was originally created for elite military forces for high-quality target acquisition and pinpoint accuracy.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 3
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_sb_pm_ii_3_12x50_blk.mdl"
@@ -1543,7 +1597,9 @@ ATT = {}
 ATT.PrintName = "Schmidt & Bender PM II 5-25x56 34mm riflescope"
 ATT.CompactName = "PM II 5-25x56"
 ATT.Icon = Material("entities/eft_attachments/scopes/34mmpmii525x56_blk.png", "mips smooth")
-ATT.Description = [[The Schmidt & Bender PM II 5-25x56 riflescope was originally created for elite military forces for high-quality target acquisition and pinpoint accuracy.]]
+ATT.Description = [[The Schmidt & Bender PM II 5-25x56 riflescope was originally created for elite military forces for high-quality target acquisition and pinpoint accuracy.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 3
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_sb_pm_ii_5_25x56_blk.mdl"
@@ -1640,7 +1696,9 @@ ATT = {}
 ATT.PrintName = "Schmidt & Bender PM II 1-8x24 30mm riflescope"
 ATT.CompactName = "PM II 1-8x24"
 ATT.Icon = Material("entities/eft_attachments/scopes/34mmpmii312x50_blk.png", "mips smooth")
-ATT.Description = [[The Schmidt & Bender PM II 1-8x24 riflescope was originally created for elite military forces for high-quality target acquisition and pinpoint accuracy.]]
+ATT.Description = [[The Schmidt & Bender PM II 1-8x24 riflescope was originally created for elite military forces for high-quality target acquisition and pinpoint accuracy.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 3
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_sb_pm_ii_1_8x24_blk.mdl"
@@ -1745,7 +1803,9 @@ ATT.CompactName = "MG-47 (BLK)"
 ATT.Icon = Material("entities/eft_ak_attachments/grip/mg47_blk.png", "mips smooth")
 ATT.Description = [[A machined aluminum grip with styling queues taken from triangle side folding stocks. 
 Compatible with all AK family weapon systems. 
-Manufactured by Kraft Gun Builders.]]
+Manufactured by Kraft Gun Builders.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -1772,7 +1832,9 @@ ATT.CompactName = "Kocherga BLK"
 ATT.Icon = Material("entities/eft_ak_attachments/stock/ko4erga_blk.png", "mips smooth")
 ATT.Description = [[The "Kocherga" lightweight stock for AKM/AK-74-type non-folding automatic rifles, manufactured by Hexagon. 
 
-Anodized Red version.]]
+Anodized Red version.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -1798,7 +1860,9 @@ ATT = {}
 ATT.PrintName = "AK FAB Defense AGR-47 pistol grip"
 ATT.CompactName = "AGR47"
 ATT.Icon = Material("entities/eft_ak_attachments/grip/fab_blk.png", "mips smooth")
-ATT.Description = [[The AGR-47 pistol grip for AK-family automatic rifles and compatibles, manufactured by FAB Defense.]]
+ATT.Description = [[The AGR-47 pistol grip for AK-family automatic rifles and compatibles, manufactured by FAB Defense.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -1823,7 +1887,9 @@ ATT = {}
 ATT.PrintName = "PP-19-01 \"Vityaz\" 9x19 PUFGUN SG-919 20 20-round magazine"
 ATT.CompactName = "SG-919 20"
 ATT.Icon = Material("entities/eft_ak_attachments/vityaz/puf20_blk.png", "mips smooth")
-ATT.Description = [[The PUFGUN SG-919 20 magazine for PP-19-01 Vityaz 9x19 with a 20-round ammo capacity. Tactical banana yellow camouflage.]]
+ATT.Description = [[The PUFGUN SG-919 20 magazine for PP-19-01 Vityaz 9x19 with a 20-round ammo capacity. Tactical banana yellow camouflage.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -1856,7 +1922,9 @@ ATT = {}
 ATT.PrintName = "PP-19-01 \"Vityaz\" 9x19 PUFGUN SG-919 30 30-round magazine"
 ATT.CompactName = "SG-919 30"
 ATT.Icon = Material("entities/eft_ak_attachments/vityaz/puf_blk.png", "mips smooth")
-ATT.Description = [[The PUFGUN SG-919 30 magazine for PP-19-01 Vityaz 9x19 with a 30-round ammo capacity. Tactical banana yellow camouflage.]]
+ATT.Description = [[The PUFGUN SG-919 30 magazine for PP-19-01 Vityaz 9x19 with a 30-round ammo capacity. Tactical banana yellow camouflage.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -1890,7 +1958,9 @@ ATT = {}
 ATT.PrintName = "AK CNC Guns OV GP handguard"
 ATT.CompactName = "OV GP"
 ATT.Icon = Material("entities/eft_ak_attachments/hg/cnc_blk.png", "mips smooth")
-ATT.Description = [[The OV GP handguard for AK series assault rifles, equipped with a KeyMod interface for the installation of additional devices and accessories. Manufactured by CNC Guns.]]
+ATT.Description = [[The OV GP handguard for AK series assault rifles, equipped with a KeyMod interface for the installation of additional devices and accessories. Manufactured by CNC Guns.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -1975,7 +2045,9 @@ ATT = {}
 ATT.PrintName = "AR-15 Geissele ACH charging handle"
 ATT.CompactName = "ACH"
 ATT.Icon = Material("entities/eft_ar15_attachments/charge/ar15_geissele_ach_charging_handle_blk.png", "mips smooth")
-ATT.Description = [[Geissele Airborne Charging Handle for AR-15 and compatible systems.]]
+ATT.Description = [[Geissele Airborne Charging Handle for AR-15 and compatible systems.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
@@ -1996,7 +2068,9 @@ ATT = {}
 ATT.PrintName = "KAC QDC 5.56x45 sound suppressor"
 ATT.CompactName = "QDC 556"
 ATT.Icon = Material("entities/eft_ar15_attachments/muzzle/kac_qdc_556x45_sound_suppressor_blk.png", "mips smooth")
-ATT.Description = [[The Knight's Armament Company QDC 556 sound suppressor, designed for use with 5.56x45 caliber weapon systems. Can only be installed on the KAC QDC 3-Prong Flash Eliminator.]]
+ATT.Description = [[The Knight's Armament Company QDC 556 sound suppressor, designed for use with 5.56x45 caliber weapon systems. Can only be installed on the KAC QDC 3-Prong Flash Eliminator.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -2032,7 +2106,9 @@ ATT = {}
 ATT.PrintName = "AR-15 Daniel Defense RIS II 12.25 handguard (Black)"
 ATT.CompactName = "RIS II 12.25"
 ATT.Icon = Material("entities/eft_ar15_attachments/hg/ar15_daniel_defense_ris_ii_1225_handguard_(coyote_brown)_blk.png", "mips smooth")
-ATT.Description = [[The Daniel Defense RIS II 12.25 foregrip is a part of the SOPMOD Block II program to replace the standard M4CQBR or Mk18 foregrips in the US SOCOM service. It's made with light but durable aircraft aluminum alloy and comes equipped with 4 mounts for the installation of additional devices and accessories. This foregrip option is incompatible with the M203 UBGL.]]
+ATT.Description = [[The Daniel Defense RIS II 12.25 foregrip is a part of the SOPMOD Block II program to replace the standard M4CQBR or Mk18 foregrips in the US SOCOM service. It's made with light but durable aircraft aluminum alloy and comes equipped with 4 mounts for the installation of additional devices and accessories. This foregrip option is incompatible with the M203 UBGL.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
@@ -2105,7 +2181,9 @@ ATT = {}
 ATT.PrintName = "AR-15 Daniel Defense RIS II 12.25 lower handguard (Black)"
 ATT.CompactName = "RIS II 12.25"
 ATT.Icon = Material("entities/eft_ar15_attachments/hg/ar15_daniel_defense_ris_ii_1225_lower_handguard_(coyote_brown)_blk.png", "mips smooth")
-ATT.Description = [[The Daniel Defense RIS II 12.25 lower handguard. Made with light but durable aircraft aluminum alloy. Equipped with RIS interface for installation of additional devices and accessories. Coyote Brown version.]]
+ATT.Description = [[The Daniel Defense RIS II 12.25 lower handguard. Made with light but durable aircraft aluminum alloy. Equipped with RIS interface for installation of additional devices and accessories. Coyote Brown version.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_dd_ris_ii_12,25_lower.mdl"
@@ -2147,7 +2225,9 @@ ATT = {}
 ATT.PrintName = "AR-15 Daniel Defense RIS II FSP 9.5 handguard (Black)"
 ATT.CompactName = "RIS II FSP 9.5 CB"
 ATT.Icon = Material("entities/eft_ar15_attachments/hg/ar15_daniel_defense_ris_ii_fsp_95_handguard_(coyote_brown)_blk.png", "mips smooth")
-ATT.Description = [[The Daniel Defense RIS II FSP 9.5 foregrip is a part of the SOPMOD Block II program to replace the standard M4CQBR or Mk18 foregrips in the US SOCOM service. It's made with light but durable aircraft aluminum alloy and comes equipped with 4 mounts for the installation of additional devices and accessories. This foregrip option is incompatible with the M203 UBGL.]]
+ATT.Description = [[The Daniel Defense RIS II FSP 9.5 foregrip is a part of the SOPMOD Block II program to replace the standard M4CQBR or Mk18 foregrips in the US SOCOM service. It's made with light but durable aircraft aluminum alloy and comes equipped with 4 mounts for the installation of additional devices and accessories. This foregrip option is incompatible with the M203 UBGL.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
@@ -2206,7 +2286,9 @@ ATT = {}
 ATT.PrintName = "AR-15 Precision Reflex GEN III Delta Carbon handguard"
 ATT.CompactName = "Delta Carbon"
 ATT.Icon = Material("entities/eft_ar15_attachments/hg/ar15_precision_reflex_gen_iii_delta_carbon_handguard_blk.png", "mips smooth")
-ATT.Description = [[The GEN III Delta Carbon handguard for AR-15 systems, equipped with a custom interface for the installation of additional devices and accessories. Manufactured by Precision Reflex.]]
+ATT.Description = [[The GEN III Delta Carbon handguard for AR-15 systems, equipped with a custom interface for the installation of additional devices and accessories. Manufactured by Precision Reflex.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
@@ -2267,7 +2349,9 @@ ATT = {}
 ATT.PrintName = "AR-15 Geissele SMR MK16 13.5 inch M-LOK handguard"
 ATT.CompactName = "SMR MK16 13.5"
 ATT.Icon = Material("entities/eft_ar15_attachments/hg/ar15_geissele_smr_mk16_95_inch_mlok_handguard_blk.png", "mips smooth")
-ATT.Description = [[Geissele SMR 13.5 inch M-LOK handguard for AR-15 equipped with a M-LOK interface for installation of additional devices and accessories.]]
+ATT.Description = [[Geissele SMR 13.5 inch M-LOK handguard for AR-15 equipped with a M-LOK interface for installation of additional devices and accessories.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
@@ -2342,7 +2426,9 @@ ATT = {}
 ATT.PrintName = "AR-15 Geissele SMR MK16 9.5 inch M-LOK handguard"
 ATT.CompactName = "SMR MK16 9.5"
 ATT.Icon = Material("entities/eft_ar15_attachments/hg/ar15_geissele_smr_mk16_135_inch_mlok_handguard_blk.png", "mips smooth")
-ATT.Description = [[Geissele SMR 9.5 inch M-LOK handguard for AR-15 equipped with a M-LOK interface for installation of additional devices and accessories.]]
+ATT.Description = [[Geissele SMR 9.5 inch M-LOK handguard for AR-15 equipped with a M-LOK interface for installation of additional devices and accessories.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
@@ -2421,7 +2507,9 @@ ATT = {}
 ATT.PrintName = "AR-10 7.62x51 Lancer L7AWM 20-round magazine"
 ATT.CompactName = "L7AWM 20"
 ATT.Icon = Material("entities/eft_spear_attachments/20_blk.png", "mips smooth")
-ATT.Description = [[A 20-round double-stack L7AWM 20 magazine for 7.62x51 NATO ammunition. Manufactured by Lancer Systems.]]
+ATT.Description = [[A 20-round double-stack L7AWM 20 magazine for 7.62x51 NATO ammunition. Manufactured by Lancer Systems.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.EFTErgoAdd = -2
 ATT.CustomCons = { Ergonomics = "-2" }
@@ -2452,7 +2540,9 @@ ATT = {}
 ATT.PrintName = "AR-10 7.62x51 Lancer L7AWM 25-round magazine"
 ATT.CompactName = "L7AWM 25"
 ATT.Icon = Material("entities/eft_spear_attachments/25_blk.png", "mips smooth")
-ATT.Description = [[A 25-round double-stack L7AWM 25 magazine for 7.62x51 NATO ammunition. Manufactured by Lancer Systems.]]
+ATT.Description = [[A 25-round double-stack L7AWM 25 magazine for 7.62x51 NATO ammunition. Manufactured by Lancer Systems.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.EFTErgoAdd = -3
 ATT.CustomCons = { Ergonomics = "-3" }
@@ -2483,7 +2573,9 @@ ATT = {}
 ATT.PrintName = "Steyr AUG 5.56x45 10-round magazine"
 ATT.CompactName = "AUG 10"
 ATT.Icon = Material("entities/eft_aug_attachments/10_blk.png", "mips smooth")
-ATT.Description = [[A 10-round polymer Steyr AUG magazine, for 5.56x45 ammunition.]]
+ATT.Description = [[A 10-round polymer Steyr AUG magazine, for 5.56x45 ammunition.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.EFTErgoAdd = 2
 ATT.CustomPros = { Ergonomics = "+2" }
@@ -2513,7 +2605,9 @@ ATT = {}
 ATT.PrintName = "Steyr AUG 5.56x45 30-round magazine"
 ATT.CompactName = "AUG 30"
 ATT.Icon = Material("entities/eft_aug_attachments/30_blk.png", "mips smooth")
-ATT.Description = [[A 30-round polymer Steyr AUG magazine, for 5.56x45 ammunition.]]
+ATT.Description = [[A 30-round polymer Steyr AUG magazine, for 5.56x45 ammunition.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.EFTErgoAdd = -3
 ATT.CustomCons = { Ergonomics = "-3" }
@@ -2541,7 +2635,9 @@ ATT = {}
 ATT.PrintName = "Steyr AUG 5.56x45 42-round magazine"
 ATT.CompactName = "AUG 42"
 ATT.Icon = Material("entities/eft_aug_attachments/42_blk.png", "mips smooth")
-ATT.Description = [[A 42-round polymer Steyr AUG magazine, for 5.56x45 ammunition.]]
+ATT.Description = [[A 42-round polymer Steyr AUG magazine, for 5.56x45 ammunition.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.EFTErgoAdd = -3
 ATT.CustomCons = { Ergonomics = "-3" }
@@ -2571,7 +2667,9 @@ ATT = {}
 ATT.PrintName = "SureFire SOCOM556-RC2 5.56x45 sound suppressor"
 ATT.CompactName = "RC2"
 ATT.Icon = Material("entities/eft_ar15_attachments/muzzle/surefire_socom556rc2_556x45_sound_suppressor_blk.png", "mips smooth")
-ATT.Description = [[Surefire SOCOM556-RC2 5.56x45 and .223 silencer, can only be installed on compatible Surefire muzzle devices.]]
+ATT.Description = [[Surefire SOCOM556-RC2 5.56x45 and .223 silencer, can only be installed on compatible Surefire muzzle devices.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -2610,7 +2708,9 @@ ATT = {}
 ATT.PrintName = "PK 7.62x54R 100-round box"
 ATT.CompactName = "PK"
 ATT.Icon = Material("entities/eft_pkm_attachments/100_blk.png", "mips smooth")
-ATT.Description = [[A standard-issue 100-round ammunition box for 7.62x54R ammo for Kalashnikov Machine gun. Manufactured by V.A. Degtyarev Plant.]]
+ATT.Description = [[A standard-issue 100-round ammunition box for 7.62x54R ammo for Kalashnikov Machine gun. Manufactured by V.A. Degtyarev Plant.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -2651,7 +2751,9 @@ ATT = {}
 ATT.PrintName = "AKS-74U Alfa Arms Goliaf handguard"
 ATT.CompactName = "Goliaf"
 ATT.Icon = Material("entities/eft_ak_attachments/su/goliaf_blk.png", "mips smooth")
-ATT.Description = [[This integrally machined handguard is manufactured from aluminum alloy D16T with coyote brown coating and can be installed instead of the standard-issue foregrip on the AKS-74U. It comes fitted with Picatinny rail mounts on three sides, allowing for the installation of additional equipment such as tactical foregrips, flashlights, and laser designators.]]
+ATT.Description = [[This integrally machined handguard is manufactured from aluminum alloy D16T with coyote brown coating and can be installed instead of the standard-issue foregrip on the AKS-74U. It comes fitted with Picatinny rail mounts on three sides, allowing for the installation of additional equipment such as tactical foregrips, flashlights, and laser designators.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -2732,7 +2834,9 @@ ATT = {}
 ATT.PrintName = "5.56x45 HK 30 STANAG polymer 30-round magazine"
 ATT.CompactName = "Polymer mag"
 ATT.Icon = Material("entities/eft_ar15_attachments/mag/556x45_hk_30_stanag_polymer_30round_magazine_blk.png", "mips smooth")
-ATT.Description = [[30-round polymer HK Polymer mag magazine, for 5.56x45 ammunition.]]
+ATT.Description = [[30-round polymer HK Polymer mag magazine, for 5.56x45 ammunition.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -2763,7 +2867,9 @@ ATT = {}
 
 ATT.PrintName = "Magpul PRS GEN2 stock (BLK)"
 ATT.CompactName = "PRS GEN2"
-ATT.Description = [[The PRS GEN2 stock manufactured by Magpul. Black version.]]
+ATT.Description = [[The PRS GEN2 stock manufactured by Magpul. Black version.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.Icon = Material("entities/eft_attachments/stocks/prsgen2_blk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_magpul_prs_gen2_fde.mdl"
@@ -2793,7 +2899,9 @@ ATT = {}
 ATT.PrintName = "HK G28 B&T QD 7.62x51 sound suppressor"
 ATT.CompactName = "B&T QD"
 ATT.Icon = Material("entities/eft_g28_attachments/s_blk.png", "mips smooth")
-ATT.Description = [[A quick-detach 7.62x51 silencer manufactured by Brugger & Thomet. Installed on the HK Prolonged flash hider.]]
+ATT.Description = [[A quick-detach 7.62x51 silencer manufactured by Brugger & Thomet. Installed on the HK Prolonged flash hider.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -2828,7 +2936,9 @@ ATT = {}
 ATT.PrintName = "R11 RSASS handguard"
 ATT.CompactName = "RSASS"
 ATT.Icon = Material("entities/eft_ar10_attachments/hgrsass_blk.png", "mips smooth")
-ATT.Description = [[A standard handguard manufactured by JP Enterprises for the Remington R11 RSASS marksman rifle. Can also be mounted on any AR-10/AR-15 base receivers.]]
+ATT.Description = [[A standard handguard manufactured by JP Enterprises for the Remington R11 RSASS marksman rifle. Can also be mounted on any AR-10/AR-15 base receivers.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true
@@ -2924,7 +3034,9 @@ ATT = {}
 ATT.PrintName = "SA-58/FAL 7.62x51 MMW polymer 20-round magazine"
 ATT.CompactName = "SA58 MMW 20"
 ATT.Icon = Material("entities/eft_sa58_attachments/20mmw_blk.png", "mips smooth")
-ATT.Description = [[A 20-round double-stack plastic magazine for FAL/SA-58 7.62x51 NATO rounds. Manufactured by Moses Machine Works.]]
+ATT.Description = [[A 20-round double-stack plastic magazine for FAL/SA-58 7.62x51 NATO rounds. Manufactured by Moses Machine Works.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.EFTErgoAdd = -2
 ATT.CustomCons = { Ergonomics = "-2" }
@@ -2955,7 +3067,9 @@ ATT = {}
 ATT.PrintName = "Mosin Rifle ProMag Archangel OPFOR PRS chassis"
 ATT.CompactName = "Archangel Mosin"
 ATT.Icon = Material("entities/eft_mosin_attachments/opfor_blk.png", "mips smooth")
-ATT.Description = [[The Archangel OPFOR PRS chassis for Mosin sniper rifle. The ergonomic gooseneck style grip with palm swells promotes maximum accuracy and comfort. Manufactured by ProMag.]]
+ATT.Description = [[The Archangel OPFOR PRS chassis for Mosin sniper rifle. The ergonomic gooseneck style grip with palm swells promotes maximum accuracy and comfort. Manufactured by ProMag.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.HasGrip = true
 
@@ -2991,7 +3105,9 @@ ATT = {}
 ATT.PrintName = "SV-98 wooden stock"
 ATT.CompactName = "SV-98"
 ATT.Icon = Material("entities/eft_sv98_attachments/wood_blk.png", "mips smooth")
-ATT.Description = [[A standard-issue wooden stock for the SV-98, manufactured by Izhmash.]]
+ATT.Description = [[A standard-issue wooden stock for the SV-98, manufactured by Izhmash.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.HasChassis = true
 ATT.HasGrip = true
@@ -3039,7 +3155,9 @@ ATT = {}
 ATT.PrintName = "VSS 9x39 6L25 20-round magazine"
 ATT.CompactName = "6L25 20"
 ATT.Icon = Material("entities/eft_val_attachments/20_blk.png", "mips smooth")
-ATT.Description = [[A 20-round polymer TsNIITochMash 6L25 9x39 magazine for the AS VAL special assault rifle.]]
+ATT.Description = [[A 20-round polymer TsNIITochMash 6L25 9x39 magazine for the AS VAL special assault rifle.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.EFTErgoAdd = -2
 ATT.CustomCons = { Ergonomics = "-2" }
@@ -3069,7 +3187,9 @@ ATT = {}
 ATT.PrintName = "M1A ProMag Archangel chassis"
 ATT.CompactName = "Archangel"
 ATT.Icon = Material("entities/eft_m1a_attachments/m1a_promag_archangel_chassis_blk.png", "mips smooth")
-ATT.Description = "The Archangel polymer chassis for M1A rifles, manufactured by ProMag."
+ATT.Description = [[The Archangel polymer chassis for M1A rifles, manufactured by ProMag.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.EFTErgoAdd = 32
 ATT.CustomPros = { Ergonomics = "+32" }
@@ -3121,7 +3241,9 @@ ATT = {}
 ATT.PrintName = "M14 TROY S.A.S.S. Chassis stock"
 ATT.CompactName = "S.A.S.S."
 ATT.Icon = Material("entities/eft_m1a_attachments/m14_troy_sass_chassis_stock_blk.png", "mips smooth")
-ATT.Description = "The TROY Semi-Automatic Sniper System chassis is designed to match the ergonomics of M16/M4 weapon systems. This modular quad-rail system allows unlimited mounting options and keeps all optics and sights mounted and undisturbed while field stripping."
+ATT.Description = [[The TROY Semi-Automatic Sniper System chassis is designed to match the ergonomics of M16/M4 weapon systems. This modular quad-rail system allows unlimited mounting options and keeps all optics and sights mounted and undisturbed while field stripping.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.EFTErgoAdd = 28
 ATT.CustomPros = { Ergonomics = "+28" }
@@ -3237,7 +3359,7 @@ ATT.CompactName = "Black"
 ATT.Icon = Material("entities/eft_attachments/arc9_eft_mp9_blk.png", "mips smooth")
 ATT.Description = [[Black color instead of FDE (?) for MP9.
 
-Not presents in EFT. Part of BLACK ATTS addon.]]
+Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.SortOrder = -90
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -3258,3 +3380,345 @@ ATT.Attachments = {
 ATT.SubMaterial2 = "models/weapons/arc9/darsu_eft/mods/weapon_bt_mp9_9x19_BLK"
 
 ARC9.LoadAttachment(ATT, "eft_mp9_blk")
+
+
+///////////////////////////////////////      eft_m700_stock_hogue_blk
+
+ATT = {}
+
+ATT.PrintName = "M700 Hogue Overmolded Ghillie stock"
+ATT.CompactName = "Overmolded Ghillie"
+ATT.Icon = Material("entities/eft_m700_attachments/m700_hogue_overmolded_ghillie_stock_blk.png", "mips smooth")
+ATT.Description = [[The Overmolded Ghillie stock for the Remington Model 700 bolt-action sniper rifle. Manufactured by Hogue.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.EFTErgoAdd = 14
+ATT.CustomPros = { Ergonomics = "+14" }
+ATT.RecoilMult = 0.79
+ATT.VisualRecoilMult = 0.79
+ATT.HeatCapacityMult = 1.021
+
+ATT.HasGrip = true
+ATT.HasHG = true
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_m700_stock"}
+
+ATT.ActivateElements = {"eft_m700_stock_hogue"}
+
+ATT.SubMaterial5 = "models/weapons/arc9/darsu_eft/mods/stock_m700_hogue_overmolded_ghillie_stock_BLK"
+
+ATT.Attachments = {
+    {
+        PrintName = "B Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_bipod"},
+        Pos = Vector(-9, 0, 0.95),
+        Ang = Angle(2, 0, 180),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_m700_stock_hogue_blk")
+
+///////////////////////////////////////      eft_m700_stock_hogue_green
+
+ATT = {}
+
+ATT.PrintName = "M700 Hogue Overmolded Ghillie stock"
+ATT.CompactName = "Overmolded Ghillie"
+ATT.Icon = Material("entities/eft_m700_attachments/m700_hogue_overmolded_ghillie_stock_green.png", "mips smooth")
+ATT.Description = [[The Overmolded Ghillie stock for the Remington Model 700 bolt-action sniper rifle. Manufactured by Hogue.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.EFTErgoAdd = 14
+ATT.CustomPros = { Ergonomics = "+14" }
+ATT.RecoilMult = 0.79
+ATT.VisualRecoilMult = 0.79
+ATT.HeatCapacityMult = 1.021
+
+ATT.HasGrip = true
+ATT.HasHG = true
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_m700_stock"}
+
+ATT.ActivateElements = {"eft_m700_stock_hogue"}
+
+ATT.SubMaterial5 = "models/weapons/arc9/darsu_eft/mods/stock_m700_hogue_overmolded_ghillie_stock_GREEN"
+
+ATT.Attachments = {
+    {
+        PrintName = "B Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_bipod"},
+        Pos = Vector(-9, 0, 0.95),
+        Ang = Angle(2, 0, 180),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_m700_stock_hogue_green")
+
+///////////////////////////////////////      eft_m700_stock_hogue_wht
+
+ATT = {}
+
+ATT.PrintName = "M700 Hogue Overmolded Ghillie stock"
+ATT.CompactName = "Overmolded Ghillie"
+ATT.Icon = Material("entities/eft_m700_attachments/m700_hogue_overmolded_ghillie_stock_wht.png", "mips smooth")
+ATT.Description = [[The Overmolded Ghillie stock for the Remington Model 700 bolt-action sniper rifle. Manufactured by Hogue.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.EFTErgoAdd = 14
+ATT.CustomPros = { Ergonomics = "+14" }
+ATT.RecoilMult = 0.79
+ATT.VisualRecoilMult = 0.79
+ATT.HeatCapacityMult = 1.021
+
+ATT.HasGrip = true
+ATT.HasHG = true
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_m700_stock"}
+
+ATT.ActivateElements = {"eft_m700_stock_hogue"}
+
+ATT.SubMaterial5 = "models/weapons/arc9/darsu_eft/mods/stock_m700_hogue_overmolded_ghillie_stock_WHT"
+
+ATT.Attachments = {
+    {
+        PrintName = "B Tactical",
+        Category = {"eft_tactical", "eft_tactical_top", "eft_bipod"},
+        Pos = Vector(-9, 0, 0.95),
+        Ang = Angle(2, 0, 180),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+    {
+        PrintName = "Camo",
+        Category = {"universal_camo"},
+        InstalledElements = {"camos"},
+        ExcludeElements = {"skins"},
+        Pos = Vector(2.5, 0, 0),
+        Ang = Angle(0,0,0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_m700_stock_hogue_wht")
+
+
+///////////////////////////////////////      eft_m700_stock_gen3_blk
+
+ATT = {}
+
+ATT.PrintName = "M700 AB Arms MOD*X GEN 3 chassis"
+ATT.CompactName = "MOD*X GEN 3"
+ATT.Icon = Material("entities/eft_m700_attachments/m700_ab_arms_modx_gen_3_chassis_blk.png", "mips smooth")
+ATT.Description = [[The AB Arms MOD*X GEN III Modular Rifle System is a lightweight, ergonomic, drop-in chassis designed for the Remington Model 700 bolt-action sniper rifle.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.EFTErgoAdd = 13
+ATT.CustomPros = { Ergonomics = "+13" }
+ATT.RecoilMult = 0.94
+ATT.VisualRecoilMult = 0.94
+
+-- ATT.HasGrip = true
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_m700_stock"}
+
+ATT.ActivateElements = {"eft_m700_stock_gen3"}
+
+ATT.SubMaterial6 = "models/weapons/arc9/darsu_eft/mods/stock_m700_abarms_mrs_mod_x_gen_3_BLK"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_m700_abarms_rhik.mdl"
+-- ATT.LHIK = true
+ATT.RHIK = true
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+
+ATT.Attachments = {
+    {
+        PrintName = "Handguard",
+        Category = "eft_m700_gen3_handguard",
+        Pos = Vector(-5, 0, -0.5),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Pistol grip",
+        Category = "eft_ar15_pgrip",
+        Pos = Vector(6.66, 0, 1.47),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "Stock",
+        Category = {"eft_ar15_buffertube", "eft_m700_gen3_buffertube"},
+        Pos = Vector(8.88, 0, 0.44),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_m700_stock_gen3_blk")
+
+///////////////////////////////////////      eft_m700_buffer_adap_gen3_blk
+
+ATT = {}
+
+ATT.PrintName = "M700 AB Arms MOD*X buffer tube side folder adapter"
+ATT.CompactName = "MOD*X buffer"
+ATT.Icon = Material("entities/eft_m700_attachments/m700_ab_arms_modx_buffer_tube_side_folder_adapter_blk.png", "mips smooth")
+ATT.Description = [[A foldable adapter for installation of telescopic stock buffer tubes on the Remington M700 MOD*X kit by AB Arms.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_m700_gen3_buffertube"}
+
+ATT.ActivateElements = {"eft_m700_buffer_adap_gen3"}
+
+ATT.SubMaterial12 = "models/weapons/arc9/darsu_eft/mods/stock_m700_abarms_mod_x_side_folder_BLK"
+
+ATT.Attachments = {
+    {
+        PrintName = "Stock",
+        Category = "eft_ar15_buffertube",
+        Pos = Vector(2.85, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_m700_buffer_adap_gen3_blk")
+
+///////////////////////////////////////      eft_m700_hg_gen3_blk
+
+ATT = {}
+
+ATT.PrintName = "M700 AB Arms MOD*X GEN 3 KeyMod handguard"
+ATT.CompactName = "MOD*X GEN 3"
+ATT.Icon = Material("entities/eft_m700_attachments/m700_ab_arms_modx_gen_3_keymod_handguard_blk.png", "mips smooth")
+ATT.Description = [[The AB Arms MOD*X GEN 3 KeyMod handguard for M700 sniper rifles equipped with a KeyMod interface for installation of additional devices and accessories.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+ATT.RecoilMult = 0.97
+ATT.VisualRecoilMult = 0.97
+ATT.HeatCapacityMult = 0.965
+
+ATT.HasHG = true
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_m700_gen3_handguard"}
+
+ATT.ActivateElements = {"eft_m700_hg_gen3"}
+
+ATT.SubMaterial14 = "models/weapons/arc9/darsu_eft/mods/handguard_m700_abarms_mrs_mod_x_gen_3_BLK"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_m700_abarms_lhik.mdl"
+ATT.LHIK = true
+-- ATT.RHIK = true
+ATT.ModelOffset = Vector(0, -4, 0)
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = {"eft_ar_frontsight", "eft_frontsight"},
+        Pos = Vector(-10.1, 0, -1.50),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Top Tactical",
+        Category = {"eft_tactical_top_big", "eft_tactical_top"},
+        Pos = Vector(-6, 0, -1.53),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "L Keymod",
+        Category = {"eft_mount_keymod2","eft_mount_keymod_casv4"},
+        Pos = Vector(-7, -0.9, -0.28),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "R Keymod",
+        Category = {"eft_mount_keymod2","eft_mount_keymod_casv4"},
+        Pos = Vector(-7, 0.9, -0.28),
+        Ang = Angle(180, 180, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = "B Keymod",
+        Category = {"eft_mount_keymod6", "eft_grip_keymod"},
+        RejectAttachments = { ["eft_foregrip_cqr"] = true },
+        Pos = Vector(-2.5, 0, 0.65),
+        Ang = Angle(0, 0, -90), 
+    },
+    {
+        PrintName = "B2 Keymod",
+        Category = {"eft_mount_keymod2","eft_mount_keymod_casv4","eft_mount_keymod_bipod"},
+        Pos = Vector(-8, 0, 0.65),
+        Ang = Angle(0, 0, -90),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_m700_hg_gen3_blk")
+
+///////////////////////////////////////      eft_m700_rail_modx_blk
+
+ATT = {}
+
+ATT.PrintName = "M700 AB Arms MOD*X rail mount"
+ATT.CompactName = "MOD*X rail"
+ATT.Icon = Material("entities/eft_m700_attachments/m700_ab_arms_modx_rail_mount_blk.png", "mips smooth")
+ATT.Description = [[The AB Arms MOD*X universal mount for the Remington Model 700 sniper rifle, allows installation of various optics.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_m700_mount"}
+
+ATT.ActivateElements = {"eft_m700_rail_modx"}
+
+ATT.SubMaterial17 = "models/weapons/arc9/darsu_eft/mods/mount_m700_abarms_mod_x_scope_mount_rail_BLK"
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_large", "eft_optic_medium", "eft_optic_small"},
+        Pos = Vector(-1.5, 0, -0.6),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Rear sight",
+        Category = "eft_rearsight",
+        Pos = Vector(1.65, 0, -0.6),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_m700_rail_modx_blk")
