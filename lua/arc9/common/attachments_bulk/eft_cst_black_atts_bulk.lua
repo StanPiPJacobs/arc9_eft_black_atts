@@ -3419,6 +3419,14 @@ ATT.Attachments = {
         Ang = Angle(2, 0, 180),
         Icon_Offset = Vector(0, 0, 0.5),
     },
+    {
+        PrintName = "Camo",
+        Category = {"universal_camo"},
+        InstalledElements = {"camos"},
+        ExcludeElements = {"skins"},
+        Pos = Vector(2.5, 0, 0),
+        Ang = Angle(0,0,0),
+    },
 }
 
 ARC9.LoadAttachment(ATT, "eft_m700_stock_hogue_blk")
@@ -3722,3 +3730,97 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "eft_m700_rail_modx_blk")
+
+
+///////////////////////////////////////      eft_muzzle_m9a3_blk
+
+
+ATT = {}
+
+ATT.PrintName = "M9A3 thread protection cap"
+ATT.CompactName = "M9A3 cap"
+ATT.Icon = Material("entities/eft_m9a3_attachments/c_blk.png", "mips smooth")
+ATT.Description = [[A threading protection cap for the Beretta M9A3 9x19 barrel.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+-- ATT.VisualRecoilMult = 0.89
+ATT.EFTErgoAdd = 1
+ATT.CustomPros = { Ergonomics = "+1" }
+-- ATT.SpreadMult = 0.98
+-- ATT.PhysBulletMuzzleVelocityMult = 1.02
+ATT.HeatCapacityAdd = 1
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_m9a3_muzzle"}
+
+ATT.ActivateElements = {"eft_muzzle_m9a3_std"}
+
+ATT.SubMaterial10 = "models/weapons/arc9/darsu_eft/mods/muzzle_m9_beretta_m9a3_protector_std_9x19_BLK"
+
+ARC9.LoadAttachment(ATT, "eft_muzzle_m9a3_blk")
+
+
+
+
+///////////////////////////////////////      eft_mag_ak_slr106_556_30_blk
+
+
+ATT = {}
+
+ATT.PrintName = "SLR-106/AK 5.56x45 Circle 10 30-round magazine"
+ATT.CompactName = "C-10 AK"
+ATT.Icon = Material("entities/eft_ak_attachments/mag/556c10_blk.png", "mips smooth")
+ATT.Description = [[A Bulgarian 30-round 5.56x45 "Waffle Pattern" magazine for the SLR-106 civilian AK-based rifles. Manufactured by Circle 10 and distributed by Arsenal Inc.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_arsenal_cwp_mag_556x45_30_blk.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_arsenal_cwp_mag_556x45_30_blk.mdl"
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+
+ATT.Category = {
+    "eft_ak_556_mag",
+}
+
+ATT.ActivateElements = {"556"}
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 30
+
+
+ARC9.LoadAttachment(ATT, "eft_mag_ak_slr106_556_30_blk")
+
+///////////////////////////////////////      eft_val_vss_stock_dark
+
+ATT = {}
+
+ATT.PrintName = "VSS wooden stock"
+ATT.CompactName = "VSS"
+ATT.Icon = Material("entities/eft_val_attachments/wood_dark.png", "mips smooth")
+ATT.Description = [[A standard-issue wooden stock for VSS Vintorez sniper rifles, manufactured by TsNIITochMash.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.EFTErgoAdd = 15
+ATT.CustomPros = { Ergonomics = "+15" }
+ATT.RecoilMult = 0.77
+ATT.VisualRecoilMult = 0.77
+
+ATT.HasGrip = true
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_vss_stock"}
+
+ATT.ActivateElements = {"eft_val_vss_stock"}
+ATT.SubMaterial9 = "models/weapons/arc9/darsu_eft/mods/stock_vss_tochmash_vss_std_wood_DARK"
+
+ARC9.LoadAttachment(ATT, "eft_val_vss_stock_dark")
