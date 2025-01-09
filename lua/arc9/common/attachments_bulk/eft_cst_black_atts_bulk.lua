@@ -3173,8 +3173,8 @@ ATT.ClipSize = 20
 ATT.ChamberSize = 1
 ATT.SuppressEmptySuffix = false 
 ATT.DropMagazineAmount = 1
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val_20_blk.mdl"
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val_20_blk.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_val2_20_blk.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_val2_20_blk.mdl"
 
 ARC9.LoadAttachment(ATT, "eft_val_mag_20_blk")
 
@@ -3808,12 +3808,13 @@ ATT.Description = [[A standard-issue wooden stock for VSS Vintorez sniper rifles
 
 Not present in EFT. Part of the BLACK ATTS addon.]]
 
-ATT.EFTErgoAdd = 15
-ATT.CustomPros = { Ergonomics = "+15" }
-ATT.RecoilMult = 0.77
-ATT.VisualRecoilMult = 0.77
+ATT.EFTErgoAdd = 8
+ATT.CustomPros = { Ergonomics = "+8" }
+ATT.RecoilMult = 0.78
+ATT.VisualRecoilMult = 0.78
 
 ATT.HasGrip = true
+ATT.HasStock = true
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -3821,7 +3822,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_vss_stock"}
 
 ATT.ActivateElements = {"eft_val_vss_stock"}
-ATT.SubMaterial9 = "models/weapons/arc9/darsu_eft/mods/stock_vss_tochmash_vss_std_wood_DARK"
+ATT.SubMaterial8 = "models/weapons/arc9/darsu_eft/mods/stock_vss_tochmash_vss_std_wood_blk"
 
 ARC9.LoadAttachment(ATT, "eft_val_vss_stock_dark")
 
