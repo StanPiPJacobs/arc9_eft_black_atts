@@ -4089,3 +4089,1471 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "eft_aksu_hg_ak_rails_blk")
 
+
+///////////////////////////////////////      eft_mag_ak_6p2bak_762_40_blk
+
+
+ATT = {}
+
+ATT.PrintName = "AK 7.62x39 bakelite 40-round magazine"
+ATT.CompactName = "6P2 bak."
+ATT.Icon = Material("entities/eft_ak_attachments/mag/762bak40_blk.png", "mips smooth")
+ATT.Description = [[A standard 40-round bakelite magazine for the RPK. It fits into 7.62x39 AK and compatible weapons. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk_std_bakelite_762x39_40_blk.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_ak_izhmash_rpk_std_bakelite_762x39_40_blk.mdl"
+
+ATT.EFTErgoAdd = -7
+ATT.CustomCons = { Ergonomics = "-7" }
+
+ATT.Category = {
+    "eft_ak_762_mag",
+}
+
+ATT.ActivateElements = {"long762"}
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 40
+
+
+
+ARC9.LoadAttachment(ATT, "eft_mag_ak_6p2bak_762_40_blk")
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////      eft_muzzle_g17_3port_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Glock 9x19 CARVER Custom \"Decelerator 3 Port\" compensator"
+ATT.CompactName = "G 3Port"
+ATT.Icon = Material("entities/eft_glock_attachments/3port_blk.png", "mips smooth")
+ATT.Description = [[A compensator manufactured by CARVER Custom. The model is only compatible with the 3rd generation 9x19 pistols.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.VisualRecoilMult = 0.89
+ATT.RecoilMult = 0.89
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.SpreadMult = 0.98
+ATT.PhysBulletMuzzleVelocityMult = 0.98
+ATT.HeatCapacityAdd = -2
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_g17_muzzle"}
+
+ATT.ActivateElements = {"eft_muzzle_g17_3port"}
+ATT.SubMaterial29 = "models/weapons/arc9/darsu_eft/mods/muzzle_glock_carver_custom_decelerator_3_port_gen_3_9x19_BLK"
+
+
+ARC9.LoadAttachment(ATT, "eft_muzzle_g17_3port_blk")
+
+///////////////////////////////////////      eft_muzzle_g17_cc4p_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Glock 9x19 CARVER Custom \"4 Port\" muzzle brake"
+ATT.CompactName = "G CC 4P"
+ATT.Icon = Material("entities/eft_glock_attachments/4port_blk.png", "mips smooth")
+ATT.Description = [[A custom compensator manufactured by CARVER Custom. The compensator includes 4 ports on the top with 3 exhaust ports on each side, totaling 10 ports. Can only fit 3rd generation Glock pistols.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.VisualRecoilMult = 0.88
+ATT.RecoilMult = 0.88
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.SpreadMult = 0.98
+ATT.PhysBulletMuzzleVelocityMult = 0.98
+ATT.HeatCapacityAdd = -2
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_g17_muzzle"}
+
+ATT.ActivateElements = {"eft_muzzle_g17_cc4p"}
+ATT.SubMaterial30 = "models/weapons/arc9/darsu_eft/mods/muzzle_glock_carver_custom_4_port_gen_3_9x19_BLK"
+
+
+ARC9.LoadAttachment(ATT, "eft_muzzle_g17_cc4p_blk")
+
+
+///////////////////////////////////////      eft_muzzle_g17_dd_fh_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Glock 9x19 Double Diamond flash hider"
+ATT.CompactName = "G DD FH"
+ATT.Icon = Material("entities/eft_glock_attachments/dd_fh_blk.png", "mips smooth")
+ATT.Description = [[A simple, inexpensive, but still quite effective compensator for the Glock family of pistols.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.VisualRecoilMult = 0.91
+ATT.RecoilMult = 0.91
+ATT.EFTErgoAdd = -1
+ATT.CustomCons = { Ergonomics = "-1" }
+ATT.SpreadMult = 0.99
+ATT.PhysBulletMuzzleVelocityMult = 0.98
+ATT.HeatCapacityAdd = -1
+
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_g17_muzzle"}
+
+ATT.ActivateElements = {"eft_muzzle_g17_dd_fh"}
+ATT.SubMaterial28 = "models/weapons/arc9/darsu_eft/mods/muzzle_glock_double_diamond_9x19_BLK"
+
+
+ARC9.LoadAttachment(ATT, "eft_muzzle_g17_dd_fh_blk")
+
+
+///////////////////////////////////////      eft_rec_g17_aw_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Glock Alpha Wolf pistol slide"
+ATT.CompactName = "G AW"
+ATT.Icon = Material("entities/eft_glock_attachments/slide_aw_blk.png", "mips smooth")
+ATT.Description = [[A slide for Glock pistols family, manufactured by Lone Wolf.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.VisualRecoilMult = 0.99
+ATT.RecoilMult = 0.99
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_g17_rec"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_g17_fs",
+        Pos = Vector(0, 0, -0.02),
+        Icon_Offset = Vector(4.5, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Rear sight",
+        Category = "eft_g17_rs",
+        Pos = Vector(0, -0.05, 0),
+        Icon_Offset = Vector(-2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Compensator",
+        Category = "eft_g17_g4",
+        ExcludeElements = {"eft_silencer_fd917"},
+        Pos = Vector(0, 5, 0.6),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ATT.ActivateElements = {"eft_rec_g17_aw"}
+ATT.SubMaterial11 = "models/weapons/arc9/darsu_eft/mods/reciever_glock_lone_wolf_alphawolf_BLK"
+
+
+ARC9.LoadAttachment(ATT, "eft_rec_g17_aw_blk")
+
+
+///////////////////////////////////////      eft_rec_g17_aw_c_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Glock 9x19 Alpha Wolf custom pistol slide"
+ATT.CompactName = "G AW C"
+ATT.Icon = Material("entities/eft_glock_attachments/slide_awc_blk.png", "mips smooth")
+ATT.Description = [[A special version of Glock family pistols’ slide made by Lone Wolf.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.VisualRecoilMult = 0.99
+ATT.RecoilMult = 0.99
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_g17_rec"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_g17_fs",
+        Pos = Vector(0, 0, -0.02),
+        Icon_Offset = Vector(4.5, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Rear sight",
+        Category = "eft_g17_rs",
+        Pos = Vector(0, -0.05, 0),
+        Icon_Offset = Vector(-2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Compensator",
+        Category = "eft_g17_g4",
+        Pos = Vector(0, 5, 0.6),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ATT.ActivateElements = {"eft_rec_g17_aw_c"}
+ATT.SubMaterial12 = "models/weapons/arc9/darsu_eft/mods/reciever_glock_lone_wolf_alphawolf_custom_pat_5_BLK"
+
+
+ARC9.LoadAttachment(ATT, "eft_rec_g17_aw_c_blk")
+
+
+///////////////////////////////////////      eft_rec_g17_motocut_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Glock 9x19 Moto Cut pistol slide"
+ATT.CompactName = "G MotoCut"
+ATT.Icon = Material("entities/eft_glock_attachments/slide_motocut_blk.png", "mips smooth")
+ATT.Description = [[A lightweight slide for Glock 9x19 pistols.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.VisualRecoilMult = 0.99
+ATT.RecoilMult = 0.99
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_g17_rec"}
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_g17_fs",
+        Pos = Vector(0, 0, -0.02),
+        Icon_Offset = Vector(4.5, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Rear sight",
+        Category = "eft_g17_rs",
+        Pos = Vector(0, -0.05, 0),
+        Icon_Offset = Vector(-2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Compensator",
+        Category = "eft_g17_g4",
+        Pos = Vector(0, 5, 0.6),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ATT.ActivateElements = {"eft_rec_g17_motocut"}
+ATT.SubMaterial14 = "models/weapons/arc9/darsu_eft/mods/reciever_glock_gspc_moto_slide_cut_BLK"
+
+
+ARC9.LoadAttachment(ATT, "eft_rec_g17_motocut_blk")
+
+
+///////////////////////////////////////      eft_rec_g17_ps9_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Glock Polymer80 PS9 pistol slide"
+ATT.CompactName = "G PS9"
+ATT.Icon = Material("entities/eft_glock_attachments/slide_ps9_blk.png", "mips smooth")
+ATT.Description = [[The PS9 slide for Glock family pistols, manufactured by Polymer80.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.VisualRecoilMult = 0.98
+ATT.RecoilMult = 0.98
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_g17_rec"}
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_g17_fs",
+        Pos = Vector(0, 0, -0.02),
+        Icon_Offset = Vector(4.5, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Rear sight",
+        Category = "eft_g17_rs",
+        Pos = Vector(0, -0.05, 0),
+        Icon_Offset = Vector(-2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Compensator",
+        Category = "eft_g17_g4",
+        Pos = Vector(0, 5, 0.6),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ATT.ActivateElements = {"eft_rec_g17_ps9"}
+ATT.SubMaterial10 = "models/weapons/arc9/darsu_eft/mods/reciever_glock_polymer80_ps9_BLK"
+
+
+ARC9.LoadAttachment(ATT, "eft_rec_g17_ps9_blk")
+
+
+///////////////////////////////////////      eft_rec_g17_vipercut_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Glock 9x19 Viper Cut pistol slide"
+ATT.CompactName = "G ViperCut"
+ATT.Icon = Material("entities/eft_glock_attachments/slide_vipercut_blk.png", "mips smooth")
+ATT.Description = [[A lightweight slide for Glock 9x19 pistols.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.VisualRecoilMult = 0.99
+ATT.RecoilMult = 0.99
+ATT.EFTErgoAdd = 6
+ATT.CustomPros = { Ergonomics = "+6" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_g17_rec"}
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_g17_fs",
+        Pos = Vector(0, 0, -0.02),
+        Icon_Offset = Vector(4.5, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Rear sight",
+        Category = "eft_g17_rs",
+        Pos = Vector(0, -0.05, 0),
+        Icon_Offset = Vector(-2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Compensator",
+        Category = "eft_g17_g4",
+        Pos = Vector(0, 5, 0.6),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ATT.ActivateElements = {"eft_rec_g17_vipercut"}
+ATT.SubMaterial13 = "models/weapons/arc9/darsu_eft/mods/reciever_glock_gspc_viper_slide_cut_BLK"
+
+
+ARC9.LoadAttachment(ATT, "eft_rec_g17_vipercut_blk")
+
+
+///////////////////////////////////////      eft_rec_g17_zt_hex_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Glock ZEV Tech HEX Gen3 pistol slide"
+ATT.CompactName = "G ZT HEX"
+ATT.Icon = Material("entities/eft_glock_attachments/slide_zev_blk.png", "mips smooth")
+ATT.Description = [[A slide for Glock pistols family, manufactured by ZEV Technologies. Includes a mount for installation of the RMR reflex sights lineup.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.VisualRecoilMult = 0.97
+ATT.RecoilMult = 0.97
+ATT.EFTErgoAdd = 9
+ATT.CustomPros = { Ergonomics = "+9" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_g17_rec"}
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_g17_fs",
+        Pos = Vector(0, 0, -0.02),
+        Icon_Offset = Vector(4.5, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Rear sight",
+        Category = "eft_g17_rs",
+        Pos = Vector(0, -0.05, 0),
+        Icon_Offset = Vector(-2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Compensator",
+        Category = "eft_g17_g4",
+        Pos = Vector(0, 5, 0.6),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Optic",
+        Category = {"eft_rmr", "eft_g17_zt_cap"},
+        Pos = Vector(0, -0.92, -0.15),
+        Icon_Offset = Vector(0.5, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+}
+
+ATT.ActivateElements = {"eft_rec_g17_zt_hex"}
+ATT.SubMaterial9 = "models/weapons/arc9/darsu_eft/mods/reciever_glock_zev_tech_hex_rmr_cut_gen_3_BLK"
+
+
+ARC9.LoadAttachment(ATT, "eft_rec_g17_zt_hex_blk")
+
+
+///////////////////////////////////////      eft_rec_g17_zt_spartan_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Glock ZEV Tech HEX Spartan pistol slide"
+ATT.CompactName = "G ZT Spartan"
+ATT.Icon = Material("entities/eft_glock_attachments/slide_zev_spartan_blk.png", "mips smooth")
+ATT.Description = [[A slide for Glock pistols family, manufactured by ZEV Technologies. Includes a mount for installation of the RMR reflex sights lineup.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+ATT.VisualRecoilMult = 0.93
+ATT.RecoilMult = 0.93
+ATT.EFTErgoAdd = 10
+ATT.CustomPros = { Ergonomics = "+10" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_g17_rec"}
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_g17_fs",
+        Pos = Vector(0, 0, -0.02),
+        Icon_Offset = Vector(4.5, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Rear sight",
+        Category = "eft_g17_rs",
+        Pos = Vector(0, -0.05, 0),
+        Icon_Offset = Vector(-2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Compensator",
+        Category = "eft_g17_g4",
+        Pos = Vector(0, 5, 0.6),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Optic",
+        Category = {"eft_rmr", "eft_g17_zt_cap"},
+        Pos = Vector(0, -0.92, -0.15),
+        Icon_Offset = Vector(0.5, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+}
+
+ATT.ActivateElements = {"eft_rec_g17_zt_spartan"}
+ATT.SubMaterial8 = "models/weapons/arc9/darsu_eft/mods/reciever_glock_zev_tech_spartan_rmr_cut_gen_3_BLK"
+
+
+ARC9.LoadAttachment(ATT, "eft_rec_g17_zt_spartan_blk")
+
+
+///////////////////////////////////////      eft_silencer_fd917_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Glock 9x19 Fischer Development FD917 sound suppressor"
+ATT.CompactName = "G FD917"
+ATT.Icon = Material("entities/eft_glock_attachments/silencer_blk.png", "mips smooth")
+ATT.Description = [[A quick detach sound suppressor for Glock 17 9x19 pistols, manufactured by Fischer Development.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.VisualRecoilMult = 0.8
+ATT.RecoilMult = 0.8
+ATT.EFTErgoAdd = -22
+ATT.CustomCons = { Ergonomics = "-22" }
+ATT.PhysBulletMuzzleVelocityMult = 1.035
+ATT.HeatCapacityAdd = -50*0.43
+
+ATT.Silencer = true 
+ATT.ExcludeElements = {"eft_muzzle_g17_g4"}
+
+ATT.Category = {"eft_g17_tac"}
+
+ATT.MuzzleParticle = "muzzleflash_suppressed"
+ATT.MuzzleEffectQCA = 5
+ATT.NoFlash = true
+ATT.BarrelLengthAdd = 5
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/glock_fischer_blk.mdl"
+ATT.BoneMerge = true
+
+ATT.Attachments = {
+    {
+        PrintName = "Tactical",
+        Category = {"eft_tactical_pistol"},
+        Pos = Vector(-0.3, 0, -1.5),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 1),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_silencer_fd917_blk")
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////      eft_barrel_deagle_xix_gld
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle Mk XIX .50 AE 152mm barrel"
+ATT.CompactName = "XIX .50AE"
+ATT.Icon = Material("entities/eft_deagle_attachments/bx_gld.png", "mips smooth")
+ATT.Description = [[A Mark XIX 152mm .50 AE barrel for the Desert Eagle pistol, manufactured by Magnum Research.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.HasBarrel = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -4
+ATT.CustomCons = { Ergonomics = "-4" }
+ATT.VisualRecoilMult = 0.97
+ATT.RecoilMult = 0.97
+-- ATT.PhysBulletMuzzleVelocityMult = 0.976
+
+ATT.Category = {"eft_deagle_barrel_xix"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_deagle_fs",
+        Pos = Vector(0, 4.2, -1.5),
+        Icon_Offset = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+    },    
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_medium",  "eft_optic_small", "eft_reapir", "eft_optic_prism"},
+        RejectAttachments = { 
+            ["eft_optic_boss"] = true, 
+            ["eft_optic_pk120"] = true, 
+            ["eft_optic_553"] = true, 
+            ["eft_optic_okp7"] = true, 
+            ["eft_optic_kobra"] = true, 
+            ["eft_optic_krechet"] = true,
+            ["eft_mount_t1sun"] = true },
+        Pos = Vector(0, 2.2, -1.38),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 6.5
+    },
+}
+
+ATT.SubMaterial9 = "models/weapons/arc9/darsu_eft/mods/dgl/barrel_deagle_magnum_research_mk19_std_152mm_127x33_GLD"
+ATT.ActivateElements = {"eft_barrel_deagle_xix"}
+
+ARC9.LoadAttachment(ATT, "eft_barrel_deagle_xix_gld")
+
+///////////////////////////////////////      eft_slide_deagle_xix_gld
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle Mk XIX pistol slide"
+ATT.CompactName = "Mk XIX"
+ATT.Icon = Material("entities/eft_deagle_attachments/sx_gld.png", "mips smooth")
+ATT.Description = [[A Mark XIX slide for the Desert Eagle pistol, manufactured by Magnum Research.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_deagle_slide_xix"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Rear sight",
+        Category = "eft_deagle_rs",
+        Pos = Vector(0, -0.05, -0.5),
+        Icon_Offset = Vector(-2.2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+}
+
+ATT.SubMaterial14 = "models/weapons/arc9/darsu_eft/mods/dgl/reciever_deagle_magnum_research_mk19_std_GLD"
+ATT.ActivateElements = {"eft_slide_deagle_xix"}
+
+ARC9.LoadAttachment(ATT, "eft_slide_deagle_xix_gld")
+
+
+///////////////////////////////////////      eft_barrel_deagle_xix_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle Mk XIX .50 AE 152mm barrel"
+ATT.CompactName = "XIX .50AE"
+ATT.Icon = Material("entities/eft_deagle_attachments/bx_blk.png", "mips smooth")
+ATT.Description = [[A Mark XIX 152mm .50 AE barrel for the Desert Eagle pistol, manufactured by Magnum Research.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.HasBarrel = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -4
+ATT.CustomCons = { Ergonomics = "-4" }
+ATT.VisualRecoilMult = 0.97
+ATT.RecoilMult = 0.97
+-- ATT.PhysBulletMuzzleVelocityMult = 0.976
+
+ATT.Category = {"eft_deagle_barrel_xix"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_deagle_fs",
+        Pos = Vector(0, 4.2, -1.5),
+        Icon_Offset = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+    },    
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_medium",  "eft_optic_small", "eft_reapir", "eft_optic_prism"},
+        RejectAttachments = { 
+            ["eft_optic_boss"] = true, 
+            ["eft_optic_pk120"] = true, 
+            ["eft_optic_553"] = true, 
+            ["eft_optic_okp7"] = true, 
+            ["eft_optic_kobra"] = true, 
+            ["eft_optic_krechet"] = true,
+            ["eft_mount_t1sun"] = true },
+        Pos = Vector(0, 2.2, -1.38),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 6.5
+    },
+}
+
+ATT.SubMaterial9 = "models/weapons/arc9/darsu_eft/mods/dglblk/barrel_deagle_magnum_research_mk19_std_152mm_127x33_BLK"
+ATT.ActivateElements = {"eft_barrel_deagle_xix"}
+
+ARC9.LoadAttachment(ATT, "eft_barrel_deagle_xix_blk")
+
+///////////////////////////////////////      eft_slide_deagle_xix_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle Mk XIX pistol slide"
+ATT.CompactName = "Mk XIX"
+ATT.Icon = Material("entities/eft_deagle_attachments/sx_blk.png", "mips smooth")
+ATT.Description = [[A Mark XIX slide for the Desert Eagle pistol, manufactured by Magnum Research.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_deagle_slide_xix"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Rear sight",
+        Category = "eft_deagle_rs",
+        Pos = Vector(0, -0.05, -0.5),
+        Icon_Offset = Vector(-2.2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+}
+
+ATT.SubMaterial14 = "models/weapons/arc9/darsu_eft/mods/dglblk/reciever_deagle_magnum_research_mk19_std_BLK"
+ATT.ActivateElements = {"eft_slide_deagle_xix"}
+
+ARC9.LoadAttachment(ATT, "eft_slide_deagle_xix_blk")
+
+
+
+
+
+///////////////////////////////////////      eft_slide_deagle_l6_gld
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle L6 pistol slide"
+ATT.CompactName = "L6"
+ATT.Icon = Material("entities/eft_deagle_attachments/s_gld.png", "mips smooth")
+ATT.Description = [[An L6 slide for the Desert Eagle pistol, manufactured by Magnum Research.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+
+ATT.VisualRecoilMult = 1.1
+ATT.VisualRecoilPositionBumpUpMult = 1.1
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_deagle_slide_l6"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Rear sight",
+        Category = "eft_deagle_rs",
+        Pos = Vector(0, -0.05, -0.5),
+        Icon_Offset = Vector(-2.2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+}
+
+ATT.SubMaterial10 = "models/weapons/arc9/darsu_eft/mods/dgl/reciever_deagle_magnum_research_l6_std_GLD"
+ATT.ActivateElements = {"eft_slide_deagle_l6"}
+
+
+ARC9.LoadAttachment(ATT, "eft_slide_deagle_l6_gld")
+
+///////////////////////////////////////      eft_barrel_deagle_l6_50ae_gld
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle L6 .50 AE 152mm barrel"
+ATT.CompactName = "L6 .50AE"
+ATT.Icon = Material("entities/eft_deagle_attachments/b_gld.png", "mips smooth")
+ATT.Description = [[An L6 152mm .50 AE barrel for the Desert Eagle pistol, manufactured by Magnum Research.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.HasBarrel = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
+ATT.VisualRecoilMult = 0.965
+ATT.RecoilMult = 0.965
+-- ATT.PhysBulletMuzzleVelocityMult = 0.976
+
+ATT.Category = {"eft_deagle_barrel_l6"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_deagle_fs",
+        Pos = Vector(0, 4.2, -1.5),
+        Icon_Offset = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+    },    
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_medium",  "eft_optic_small", "eft_reapir", "eft_optic_prism"},
+        RejectAttachments = { 
+            ["eft_optic_boss"] = true, 
+            ["eft_optic_pk120"] = true, 
+            ["eft_optic_553"] = true, 
+            ["eft_optic_okp7"] = true, 
+            ["eft_optic_kobra"] = true, 
+            ["eft_optic_krechet"] = true,
+            ["eft_mount_t1sun"] = true },
+        Pos = Vector(0, 2.2, -1.38),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 6.5
+    },
+}
+
+ATT.SubMaterial5 = "models/weapons/arc9/darsu_eft/mods/dgl/barrel_deagle_magnum_research_l6_std_152mm_127x33_GLD"
+ATT.ActivateElements = {"eft_barrel_deagle_l6_50ae"}
+
+ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l6_50ae_gld")
+
+///////////////////////////////////////      eft_slide_deagle_l6_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle L6 pistol slide"
+ATT.CompactName = "L6"
+ATT.Icon = Material("entities/eft_deagle_attachments/s_blk.png", "mips smooth")
+ATT.Description = [[An L6 slide for the Desert Eagle pistol, manufactured by Magnum Research.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.EFTErgoAdd = 4
+ATT.CustomPros = { Ergonomics = "+4" }
+
+ATT.VisualRecoilMult = 1.1
+ATT.VisualRecoilPositionBumpUpMult = 1.1
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_deagle_slide_l6"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Rear sight",
+        Category = "eft_deagle_rs",
+        Pos = Vector(0, -0.05, -0.5),
+        Icon_Offset = Vector(-2.2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+}
+
+ATT.SubMaterial10 = "models/weapons/arc9/darsu_eft/mods/dglblk/reciever_deagle_magnum_research_l6_std_BLK"
+ATT.ActivateElements = {"eft_slide_deagle_l6"}
+
+
+ARC9.LoadAttachment(ATT, "eft_slide_deagle_l6_blk")
+
+///////////////////////////////////////      eft_barrel_deagle_l6_50ae_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle L6 .50 AE 152mm barrel"
+ATT.CompactName = "L6 .50AE"
+ATT.Icon = Material("entities/eft_deagle_attachments/b_blk.png", "mips smooth")
+ATT.Description = [[An L6 152mm .50 AE barrel for the Desert Eagle pistol, manufactured by Magnum Research.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.HasBarrel = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -3
+ATT.CustomCons = { Ergonomics = "-3" }
+ATT.VisualRecoilMult = 0.965
+ATT.RecoilMult = 0.965
+-- ATT.PhysBulletMuzzleVelocityMult = 0.976
+
+ATT.Category = {"eft_deagle_barrel_l6"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_deagle_fs",
+        Pos = Vector(0, 4.2, -1.5),
+        Icon_Offset = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+    },    
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_medium",  "eft_optic_small", "eft_reapir", "eft_optic_prism"},
+        RejectAttachments = { 
+            ["eft_optic_boss"] = true, 
+            ["eft_optic_pk120"] = true, 
+            ["eft_optic_553"] = true, 
+            ["eft_optic_okp7"] = true, 
+            ["eft_optic_kobra"] = true, 
+            ["eft_optic_krechet"] = true,
+            ["eft_mount_t1sun"] = true },
+        Pos = Vector(0, 2.2, -1.38),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 6.5
+    },
+}
+
+ATT.SubMaterial5 = "models/weapons/arc9/darsu_eft/mods/dglblk/barrel_deagle_magnum_research_l6_std_152mm_127x33_BLK"
+ATT.ActivateElements = {"eft_barrel_deagle_l6_50ae"}
+
+ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l6_50ae_blk")
+
+
+
+
+
+
+
+
+///////////////////////////////////////      eft_slide_deagle_l5_gld
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle L5 .50 AE pistol slide"
+ATT.CompactName = "L5 .50AE"
+ATT.Icon = Material("entities/eft_deagle_attachments/s6_gld.png", "mips smooth")
+ATT.Description = [[An L5 slide for the Desert Eagle pistol chambered in .50 AE, manufactured by Magnum Research.]]
+
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_deagle_slide_l5"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Rear sight",
+        Category = "eft_deagle_rs",
+        Pos = Vector(0, -0.05, -0.5),
+        Icon_Offset = Vector(-2.2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+}
+
+ATT.SubMaterial12 = "models/weapons/arc9/darsu_eft/mods/dgl/reciever_deagle_magnum_research_l5_std_GLD"
+ATT.ActivateElements = {"eft_slide_deagle_l5"}
+
+
+ARC9.LoadAttachment(ATT, "eft_slide_deagle_l5_gld")
+
+///////////////////////////////////////      eft_slide_deagle_l5_357_gld
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle L5 .357 pistol slide"
+ATT.CompactName = "L5 .357"
+ATT.Icon = Material("entities/eft_deagle_attachments/s357_gld.png", "mips smooth")
+ATT.Description = [[An L5 slide for the Desert Eagle pistol chambered in .357 Magnum, manufactured by Magnum Research.
+
+in this mod it converts l5 deagle to .357!!]]
+
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/357.mdl"
+
+local path = "weapons/darsu_eft/deagle/"
+ATT.ShootSound = path .. "de357_outdoor_close.ogg"
+ATT.ShootSoundIndoor = path .. "de357_indoor_close.ogg"
+ATT.DistantShootSound = path .. "de357_outdoor_distant.ogg"
+ATT.DistantShootSoundIndoor = path .. "de357_indoor_distant.ogg"
+
+ATT.ActivateElements = {"eft_slide_deagle_l5_357"}
+ATT.Category = {"eft_deagle_slide_l5"}
+
+ATT.RecoilMult = 0.33
+ATT.VisualRecoilMult = 0.4
+ATT.VisualRecoilPositionBumpUpMult = 0.3
+ATT.VisualRecoilDampingConst = 65
+ATT.RecoilKickMult = 0.75
+
+ATT.Attachments = {
+    {
+        PrintName = "Rear sight",
+        Category = "eft_deagle_rs",
+        Pos = Vector(0, -0.05, -0.5),
+        Icon_Offset = Vector(-2.2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Ammunition",
+        Category = "eft_ammo_357",
+        Integral = "eft_ammo_357_fmj",
+        Installed = "eft_ammo_357_fmj",
+        Pos = Vector(0, -2, 5.68),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ATT.SubMaterial13 = "models/weapons/arc9/darsu_eft/mods/dgl/reciever_deagle_magnum_research_l5_stainless_GLD"
+ATT.ActivateElements = {"eft_slide_deagle_l5_357"}
+
+
+ARC9.LoadAttachment(ATT, "eft_slide_deagle_l5_357_gld")
+
+///////////////////////////////////////      eft_barrel_deagle_l5_50ae_gld
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle L5 .50 AE 127mm barrel"
+ATT.CompactName = "L5 .50AE"
+ATT.Icon = Material("entities/eft_deagle_attachments/b6_gld.png", "mips smooth")
+ATT.Description = [[An L5 127mm .50 AE barrel for the Desert Eagle pistol, manufactured by Magnum Research.]]
+
+ATT.HasBarrel = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.VisualRecoilMult = 0.99
+ATT.RecoilMult = 0.99
+-- ATT.PhysBulletMuzzleVelocityMult = 0.976
+
+ATT.Category = {"eft_deagle_barrel_l5"}
+
+ATT.ExcludeElements = {"eft_slide_deagle_l5_357"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_deagle_fs",
+        Pos = Vector(0, 4.2, -1.5),
+        Icon_Offset = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+    },    
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_small", "eft_reapir", "eft_optic_prism"},
+        RejectAttachments = { ["eft_optic_boss"] = true, ["eft_optic_pk120"] = true, },
+        Pos = Vector(0, 2.2, -1.38),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 6.5
+    },
+}
+
+ATT.SubMaterial7 = "models/weapons/arc9/darsu_eft/mods/dgl/barrel_deagle_magnum_research_l5_std_127mm_127x33_GLD"
+ATT.ActivateElements = {"eft_barrel_deagle_l5_50ae"}
+
+ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l5_50ae_gld")
+
+///////////////////////////////////////      eft_barrel_deagle_l5_357_gld
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle L5 .357 127mm barrel"
+ATT.CompactName = "L5 .357"
+ATT.Icon = Material("entities/eft_deagle_attachments/b357_gld.png", "mips smooth")
+ATT.Description = [[An L5 127mm .357 Magnum barrel for the Desert Eagle pistol, manufactured by Magnum Research.]]
+
+ATT.HasBarrel = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.VisualRecoilMult = 0.98
+ATT.RecoilMult = 0.98
+-- ATT.PhysBulletMuzzleVelocityMult = 0.976
+
+ATT.Category = {"eft_deagle_barrel_l5"}
+
+ATT.RequireElements = {"eft_slide_deagle_l5_357"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_deagle_fs",
+        Pos = Vector(0, 4.2, -1.5),
+        Icon_Offset = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+    },    
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_small", "eft_reapir", "eft_optic_prism"},
+        RejectAttachments = { ["eft_optic_boss"] = true, ["eft_optic_pk120"] = true, },
+        Pos = Vector(0, 2.2, -1.38),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 6.5
+    },
+}
+
+ATT.SubMaterial8 = "models/weapons/arc9/darsu_eft/mods/dgl/barrel_deagle_magnum_research_l5_std_127mm_9x33r_GLD"
+ATT.ActivateElements = {"eft_barrel_deagle_l5_357"}
+
+ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l5_357_gld")
+
+
+
+///////////////////////////////////////      eft_slide_deagle_l5_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle L5 .50 AE pistol slide"
+ATT.CompactName = "L5 .50AE"
+ATT.Icon = Material("entities/eft_deagle_attachments/s6_blk.png", "mips smooth")
+ATT.Description = [[An L5 slide for the Desert Eagle pistol chambered in .50 AE, manufactured by Magnum Research.]]
+
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_deagle_slide_l5"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Rear sight",
+        Category = "eft_deagle_rs",
+        Pos = Vector(0, -0.05, -0.5),
+        Icon_Offset = Vector(-2.2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+}
+
+ATT.SubMaterial12 = "models/weapons/arc9/darsu_eft/mods/dglblk/reciever_deagle_magnum_research_l5_std_BLK"
+ATT.ActivateElements = {"eft_slide_deagle_l5"}
+
+
+ARC9.LoadAttachment(ATT, "eft_slide_deagle_l5_blk")
+
+///////////////////////////////////////      eft_slide_deagle_l5_357_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle L5 .357 pistol slide"
+ATT.CompactName = "L5 .357"
+ATT.Icon = Material("entities/eft_deagle_attachments/s357_blk.png", "mips smooth")
+ATT.Description = [[An L5 slide for the Desert Eagle pistol chambered in .357 Magnum, manufactured by Magnum Research.
+
+in this mod it converts l5 deagle to .357!!]]
+
+ATT.EFTErgoAdd = 3
+ATT.CustomPros = { Ergonomics = "+3" }
+
+ATT.HasSlide = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/357.mdl"
+
+local path = "weapons/darsu_eft/deagle/"
+ATT.ShootSound = path .. "de357_outdoor_close.ogg"
+ATT.ShootSoundIndoor = path .. "de357_indoor_close.ogg"
+ATT.DistantShootSound = path .. "de357_outdoor_distant.ogg"
+ATT.DistantShootSoundIndoor = path .. "de357_indoor_distant.ogg"
+
+ATT.ActivateElements = {"eft_slide_deagle_l5_357"}
+ATT.Category = {"eft_deagle_slide_l5"}
+
+ATT.RecoilMult = 0.33
+ATT.VisualRecoilMult = 0.4
+ATT.VisualRecoilPositionBumpUpMult = 0.3
+ATT.VisualRecoilDampingConst = 65
+ATT.RecoilKickMult = 0.75
+
+ATT.Attachments = {
+    {
+        PrintName = "Rear sight",
+        Category = "eft_deagle_rs",
+        Pos = Vector(0, -0.05, -0.5),
+        Icon_Offset = Vector(-2.2, 0, 0.3),
+        Ang = Angle(0, -90, 0),
+    },
+    {
+        PrintName = "Ammunition",
+        Category = "eft_ammo_357",
+        Integral = "eft_ammo_357_fmj",
+        Installed = "eft_ammo_357_fmj",
+        Pos = Vector(0, -2, 5.68),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+ATT.SubMaterial13 = "models/weapons/arc9/darsu_eft/mods/dglblk/reciever_deagle_magnum_research_l5_stainless_BLK"
+ATT.ActivateElements = {"eft_slide_deagle_l5_357"}
+
+
+ARC9.LoadAttachment(ATT, "eft_slide_deagle_l5_357_blk")
+
+///////////////////////////////////////      eft_barrel_deagle_l5_50ae_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle L5 .50 AE 127mm barrel"
+ATT.CompactName = "L5 .50AE"
+ATT.Icon = Material("entities/eft_deagle_attachments/b6_blk.png", "mips smooth")
+ATT.Description = [[An L5 127mm .50 AE barrel for the Desert Eagle pistol, manufactured by Magnum Research.]]
+
+ATT.HasBarrel = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.VisualRecoilMult = 0.99
+ATT.RecoilMult = 0.99
+-- ATT.PhysBulletMuzzleVelocityMult = 0.976
+
+ATT.Category = {"eft_deagle_barrel_l5"}
+
+ATT.ExcludeElements = {"eft_slide_deagle_l5_357"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_deagle_fs",
+        Pos = Vector(0, 4.2, -1.5),
+        Icon_Offset = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+    },    
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_small", "eft_reapir", "eft_optic_prism"},
+        RejectAttachments = { ["eft_optic_boss"] = true, ["eft_optic_pk120"] = true, },
+        Pos = Vector(0, 2.2, -1.38),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 6.5
+    },
+}
+
+ATT.SubMaterial7 = "models/weapons/arc9/darsu_eft/mods/dglblk/barrel_deagle_magnum_research_l5_std_127mm_127x33_BLK"
+ATT.ActivateElements = {"eft_barrel_deagle_l5_50ae"}
+
+ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l5_50ae_blk")
+
+///////////////////////////////////////      eft_barrel_deagle_l5_357_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle L5 .357 127mm barrel"
+ATT.CompactName = "L5 .357"
+ATT.Icon = Material("entities/eft_deagle_attachments/b357_blk.png", "mips smooth")
+ATT.Description = [[An L5 127mm .357 Magnum barrel for the Desert Eagle pistol, manufactured by Magnum Research.]]
+
+ATT.HasBarrel = true 
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -2
+ATT.CustomCons = { Ergonomics = "-2" }
+ATT.VisualRecoilMult = 0.98
+ATT.RecoilMult = 0.98
+-- ATT.PhysBulletMuzzleVelocityMult = 0.976
+
+ATT.Category = {"eft_deagle_barrel_l5"}
+
+ATT.RequireElements = {"eft_slide_deagle_l5_357"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Front sight",
+        Category = "eft_deagle_fs",
+        Pos = Vector(0, 4.2, -1.5),
+        Icon_Offset = Vector(0, 0, 0),
+        Ang = Angle(0, -90, 0),
+    },    
+    {
+        PrintName = "Optic",
+        Category = {"eft_optic_small", "eft_reapir", "eft_optic_prism"},
+        RejectAttachments = { ["eft_optic_boss"] = true, ["eft_optic_pk120"] = true, },
+        Pos = Vector(0, 2.2, -1.38),
+        Ang = Angle(0, -90, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExtraSightDistance = 6.5
+    },
+}
+
+ATT.SubMaterial8 = "models/weapons/arc9/darsu_eft/mods/dglblk/barrel_deagle_magnum_research_l5_std_127mm_9x33r_BLK"
+ATT.ActivateElements = {"eft_barrel_deagle_l5_357"}
+
+ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l5_357_blk")
+
+
+
+
+
+
+///////////////////////////////////////      eft_deagle_skin_gold
+
+
+ATT = {}
+
+ATT.PrintName = "Gold Deagle Frame"
+ATT.CompactName = "Gold"
+ATT.Icon = Material("entities/eft_deagle_attachments/goldskin.png", "mips smooth")
+ATT.Description = [[Make deagles gold
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.CustomPros = { Swag = "+9999" }
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_custom_deagle"}
+
+ATT.SubMaterial0 = "models/weapons/arc9/darsu_eft/mods/dgl/weapon_magnum_research_desert_eagle_l6_127x33_GLD"
+ATT.SubMaterial1 = "models/weapons/arc9/darsu_eft/mods/dgl/weapon_magnum_research_desert_eagle_l5_127x33_GLD"
+ATT.SubMaterial2 = "models/weapons/arc9/darsu_eft/mods/dgl/weapon_magnum_research_desert_eagle_mk19_127x33_GLD"
+ATT.SubMaterial4 = "models/weapons/arc9/darsu_eft/mods/dgl/weapon_magnum_research_desert_eagle_l5_9x33r_GLD"
+
+ATT.Attachments = {
+    {
+        PrintName = "Custom Slot",
+        Category = {"eft_custom_slot", "eft_custom_deagle"},
+        Pos = Vector(0, -1, 0),
+        Icon_Offset = Vector(0,0,0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_deagle_skin_gold")
+
+///////////////////////////////////////      eft_rs_deagle_gld
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle rear sight"
+ATT.CompactName = "DE RS"
+ATT.Icon = Material("entities/eft_deagle_attachments/rs_gld.png", "mips smooth")
+ATT.Description = [[A standard-issue rear sight for the Desert Eagle pistol, manufactured by Magnum Research.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_deagle_rs"}
+
+ATT.ActivateElements = {"eft_rs_deagle_std"}
+ATT.SubMaterial18 = "models/weapons/arc9/darsu_eft/mods/dgl/sight_rear_deagle_magnum_research_std_GLD"
+
+ARC9.LoadAttachment(ATT, "eft_rs_deagle_gld")
+
+///////////////////////////////////////      eft_fs_deagle_gld
+
+
+ATT = {}
+
+ATT.PrintName = "Desert Eagle front sight"
+ATT.CompactName = "DE FS"
+ATT.Icon = Material("entities/eft_deagle_attachments/fs_gld.png", "mips smooth")
+ATT.Description = [[A standard-issue front sight for the Desert Eagle pistol, manufactured by Magnum Research.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_deagle_fs"}
+
+ATT.ActivateElements = {"eft_fs_deagle_std"}
+ATT.SubMaterial17 = "models/weapons/arc9/darsu_eft/mods/dgl/sight_front_deagle_magnum_research_std_GLD"
+
+ARC9.LoadAttachment(ATT, "eft_fs_deagle_gld")
+
+///////////////////////////////////////      eft_deagle_skin_black
+
+
+ATT = {}
+
+ATT.PrintName = "Black Deagle Frame"
+ATT.CompactName = "Black"
+ATT.Icon = Material("entities/eft_deagle_attachments/blackskin.png", "mips smooth")
+ATT.Description = [[Make deagles black
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_custom_deagle"}
+
+ATT.SubMaterial0 = "models/weapons/arc9/darsu_eft/mods/dglblk/weapon_magnum_research_desert_eagle_l6_127x33_BLK"
+ATT.SubMaterial1 = "models/weapons/arc9/darsu_eft/mods/dglblk/weapon_magnum_research_desert_eagle_l5_127x33_BLK"
+ATT.SubMaterial2 = "models/weapons/arc9/darsu_eft/mods/dglblk/weapon_magnum_research_desert_eagle_mk19_127x33_BLK"
+ATT.SubMaterial4 = "models/weapons/arc9/darsu_eft/mods/dglblk/weapon_magnum_research_desert_eagle_l5_9x33r_BLK"
+
+ATT.Attachments = {
+    {
+        PrintName = "Custom Slot",
+        Category = {"eft_custom_slot", "eft_custom_deagle"},
+        Pos = Vector(0, -1, 0),
+        Icon_Offset = Vector(0,0,0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "eft_deagle_skin_black")

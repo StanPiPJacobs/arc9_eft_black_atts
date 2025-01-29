@@ -1,0 +1,38 @@
+// ESCAPE FROM TARKOV TACTICAL REALISM WITH HARDCORE MATERIALS
+// Auto converter by Darsu, material setup and vmt by horjenger
+
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/darsu_eft/deagle/reciever_deagle_magnum_research_l6_std_LOD0_diff"
+	"$bumpmap" "models/weapons/arc9/darsu_eft/deagle/reciever_deagle_magnum_research_l6_std_LOD0_nrm"
+	"$color2" "[6.5 4.5 0.75]"
+	// "$phongexponenttexture" "models/weapons/arc9/darsu_eft/deagle/reciever_deagle_magnum_research_l6_std_LOD0_gloss"
+    "$phong" "1"
+    "$phongboost" "0.2"
+    "$phongexponent" "3.25"
+    "$phongfresnelranges" "[1 0.5 0]"
+    // "$phongalbedotint" "1"
+	"$phongalbedoboost" "115"
+	"$phongtint" "[32.5 22.5 3.7]"
+
+	"$rimlight" "1"
+    "$rimlightexponent" "100"
+    "$rimmask" "1"
+    "$rimlightboost" "0.015"
+
+    "$basemapalphaenvmapmask" "1"
+    "$envmapfresnel" "1"
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[0.325 0.225 0.0525]"
+
+	"Proxies"
+     {
+        "Arc9EnvMapTint"
+        {
+            "specularity" "1.5"             //0.25, 0.5, 0.75, 1
+            "min" "0"
+            "max" "5"                       //change this if too bright in game
+            "color"	"[1.9 1.1 0.25]"
+        }
+     }
+}
