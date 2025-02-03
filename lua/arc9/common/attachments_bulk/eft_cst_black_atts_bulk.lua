@@ -5557,3 +5557,203 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "eft_deagle_skin_black")
+
+///////////////////////////////////////      eft_bipod_harris_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Harris S-BRM 6-9\" Bipod"
+ATT.CompactName = "S-BRM"
+ATT.Description = [[The S-BRM 6-9" ultralight foldable bipod with a spring retraction mechanism. Used by service operators and civilian shooters worldwide. Manufactured by Harris.
+
+A bit improvised version of EFT bipods, does not need manual unfolding.
+Not present in EFT. Part of the BLACK ATTS addon.]]
+ATT.Icon = Material("entities/eft_attachments/tactical/harris.png", "mips smooth")
+ATT.SortOrder = -2
+
+ATT.EFTErgoAdd = -5
+ATT.CustomCons = { Ergonomics = "-5" }
+
+ATT.Bipod = true 
+ATT.RecoilMultBipod = 0.33
+ATT.VisualRecoilSpringPunchDampingMultBipod = 3
+ATT.VisualRecoilMultBipod = 0.33
+ATT.HoldBreathTimeMultBipod = 30
+-- ATT.SwayMultBipod = 0.1
+ATT.SwayAddBipod = -10
+
+ATT.EnterBipodSound = false 
+ATT.ExitBipodSound = false
+
+ATT.BipodPos = Vector(-1.7, -3.5, 1)
+ATT.BipodAng = Angle(0, 0, 0)
+
+ATT.Category = {"eft_harris_bipod"}
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/bipod_harris_brm.mdl"
+-- ATT.ModelAngleOffset = Angle(180, 180, 0)
+
+ATT.DrawFunc = function(self, model, wm)
+    if self:GetBipod() then
+        if self:GetEnterBipodTime() + 0.1 < CurTime() then
+            model:SetBodygroup(0, 1)
+        end
+    else
+        model:SetBodygroup(0, 0)
+    end
+end
+
+ATT.ModelMaterial = "models/weapons/arc9/darsu_eft/mods/bipod_base_harris_s_brm_6_9_BLK"
+
+ARC9.LoadAttachment(ATT, "eft_bipod_harris_blk")
+
+
+///////////////////////////////////////      eft_scope_shakhin_blk
+
+
+ATT = {}
+
+ATT.PrintName = "Cyclone Shakhin 3.7x thermal scope"
+ATT.CompactName = "Shakhin 3.7x"
+ATT.Icon = Material("entities/eft_attachments/scopes/shscope_blk.png", "mips smooth")
+ATT.Description = [[A 3.7x thermal scope manufactured by Central Research Institute Cyclone.
+
+! Note: low refresh rate effect was temporarly disabled to not cause glitches on certain maps. I hope better implementation will be implemented some day.
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.Scale = 1
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_shakhin_37x_blk.mdl"
+
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = "eft_shakhin_scope"
+
+
+ATT.EFTErgoAdd = -20
+ATT.CustomCons = { Ergonomics = "-20" }
+
+ATT.FoldSights = true
+-- local Reticle0 = Material("vgui/arc9_eft_shared/reticles/scope_base_armasight_zeus_pro_640_2_16x50_30hz_LOD0_mark_00.png", "mips smooth")
+-- local Reticle1 = Material("vgui/arc9_eft_shared/reticles/scope_base_armasight_zeus_pro_640_2_16x50_30hz_LOD0_mark_01.png", "mips smooth")
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 8.1, -1.637),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.15,
+        ViewModelFOV = 36,
+        RTScopeFOV = 36/2,
+        OnSwitchToSight = function(self, slottbl)
+            if CLIENT then ARC9EFTdrawnumber("3.7x") end
+        end,
+        RTScopeMagnification = 3.7,
+        -- Reticle = Reticle0,
+    },
+}
+
+local pattern = Material("vgui/arc9_eft_shared/HeatRamp.png")
+
+-- ATT.ToggleStats = {
+--     {
+--         PrintName = "White hot",
+--         RTScopeReticle = Reticle0
+--     },
+--     {
+--         PrintName = "Yellow hot",
+--         RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
+--             ["$pp_colour_addr"] = 0,
+--             ["$pp_colour_addg"] = 0,
+--             ["$pp_colour_addb"] = 0,
+--             ["$pp_colour_brightness"] = 0.3,
+--             ["$pp_colour_contrast"] = 0.4,
+--             ["$pp_colour_colour"] = 0.7,
+--             ["$pp_colour_mulr"] = 0,
+--             ["$pp_colour_mulg"] = 0,
+--             ["$pp_colour_mulb"] = 0
+--         },
+--         RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
+
+--             ["$pp_colour_addr"] = -0.5,
+--             ["$pp_colour_addg"] = -0.5,
+--             ["$pp_colour_addb"] = 0.5,
+--             ["$pp_colour_brightness"] = 11,
+--             ["$pp_colour_contrast"] = 1,
+--             ["$pp_colour_colour"] = 1,
+--             ["$pp_colour_mulr"] = 0,
+--             ["$pp_colour_mulg"] = 0,
+--             ["$pp_colour_mulb"] = 0
+--         },
+--         RTScopeCustomPPFunc = function(swep)
+--             -- DrawMotionBlur(0.95, 1, 1/21)
+--          DrawTexturize( 0, pattern )
+--             DrawBloom(0.05, 1, 12, 8, 1, 2, 1.1, 1.2, 0.75)
+--         end,
+--         RTScopeReticle = Reticle1
+--     },
+-- }
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 1
+ATT.RTScopeFOV = 12
+ATT.RTScopeReticle = Material("vgui/arc9_eft_shared/reticles/scope_base_ciklon_shakhin_37x_LOD0_mark.png", "mips smooth")
+ATT.RTScopeReticleScale = 0.94
+ATT.RTScopeColorable = false
+ATT.RTScopeShadowIntensity = 5
+ATT.RTScopeBlackBox = true 
+ATT.RTScopeBlackBoxShadow = true  
+ATT.RTScopeNoShadow = false  
+
+ATT.RTScopeFLIR = true
+
+ATT.RTScopeFLIRSolid = false -- Solid color FLIR instead of like a shaded look
+ATT.RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
+    ["$pp_colour_addr"] = 185/255,
+    ["$pp_colour_addg"] = 90/255,
+    ["$pp_colour_addb"] = 0,
+    ["$pp_colour_brightness"] = 0.15,
+    ["$pp_colour_contrast"] = 0.27,
+    ["$pp_colour_colour"] = 0.2,
+    ["$pp_colour_mulr"] = 0,
+    ["$pp_colour_mulg"] = 0,
+    ["$pp_colour_mulb"] = 0
+}
+ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
+    ["$pp_colour_addr"] = 0.49,
+    ["$pp_colour_addg"] = 0.49,
+    ["$pp_colour_addb"] = 0.49,
+    ["$pp_colour_brightness"] = -0.59,
+    ["$pp_colour_contrast"] = 1,
+    ["$pp_colour_colour"] = 0,
+    ["$pp_colour_mulr"] = 0,
+    ["$pp_colour_mulg"] = 0,
+    ["$pp_colour_mulb"] = 0
+}
+
+ATT.RTScopeCustomPPFunc = function(swep)
+    --DrawMotionBlur(0.95, 1, 1/21)
+    DrawBloom(0.16, 2, 5.5, 5.5, 0, 0.1, 71/255, 1, 93/255)
+
+    -- DrawSharpen(4, 0.6)
+end
+
+ATT.ScopeScreenRatio = 730/1080
+
+ATT.Flare = true
+ATT.FlareColor = Color(255, 255, 255)
+ATT.FlareSize = 10
+ATT.FlareAttachment = 1
+
+ATT.ModelOffset = Vector(0, 0, -0)
+
+ATT.Attachments = {
+    {
+        PrintName = "Aux",
+        Category = {"eft_shakhin_cup"},
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(-4.5, 0, 2.2),
+    },
+}
+
+
+ARC9.LoadAttachment(ATT, "eft_scope_shakhin_blk")
