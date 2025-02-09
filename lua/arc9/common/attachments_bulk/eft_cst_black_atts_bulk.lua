@@ -340,46 +340,73 @@ ATT.ToggleStats = {
     {
         PrintName = "Laser",
         Laser = true,
+        LaserIR = true,
         LaserStrength = 0.5,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
         LaserColor = Color(238, 27, 27),
         LaserAttachment = 2,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
+    },  
+    {
+        PrintName = "IR Laser",
+        Laser = true,
+        LaserIR = true,
+        LaserStrength = 0.0,
+        LaserFlareMat = Material("effects/arc9_eft/laserdot"),
+        LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
+        LaserColor = Color(238, 27, 27),
+        LaserAttachment = 2,
+        EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },    
     {
         PrintName = "IR Light",
         Flashlight = true,
+        FlashlightIR = true,
         FlashlightColor = Color(255, 8, 0),
         FlashlightMaterial = "effects/arc9_eft/FlashlightCookie",
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },   
     {
-        PrintName = "IR + Laser",
+        PrintName = "IR + IR Laser",
         Flashlight = true,
         FlashlightColor = Color(255, 8, 0),
         FlashlightMaterial = "effects/arc9_eft/FlashlightCookie",
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         
         Laser = true,
-        LaserStrength = 0.5,
+        LaserIR = true,
+        LaserStrength = 0.0,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
         LaserColor = Color(238, 27, 27),
         LaserAttachment = 2,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },
     {
         PrintName = "None",
     }
 }
+
+local meow_offset1 = Vector(-1.8, -0.208151, 0.826)
+ATT.DrawFunc = function(swep, model, wm)
+    if wm then return end
+
+    drawlight(swep, model, 1, meow_offset1, meow_green)
+end
 
 
 ARC9.LoadAttachment(ATT, "eft_tactical_peq15_blk")
@@ -412,46 +439,73 @@ ATT.ToggleStats = {
     {
         PrintName = "Laser",
         Laser = true,
+        LaserIR = true,
         LaserStrength = 0.5,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
         LaserColor = Color(238, 27, 27),
         LaserAttachment = 2,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
+    },  
+    {
+        PrintName = "IR Laser",
+        Laser = true,
+        LaserIR = true,
+        LaserStrength = 0.0,
+        LaserFlareMat = Material("effects/arc9_eft/laserdot"),
+        LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
+        LaserColor = Color(238, 27, 27),
+        LaserAttachment = 2,
+        EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },    
     {
         PrintName = "IR Light",
         Flashlight = true,
+        FlashlightIR = true,
         FlashlightColor = Color(255, 8, 0),
         FlashlightMaterial = "effects/arc9_eft/FlashlightCookie",
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },   
     {
-        PrintName = "IR + Laser",
+        PrintName = "IR + IR Laser",
         Flashlight = true,
         FlashlightColor = Color(255, 8, 0),
         FlashlightMaterial = "effects/arc9_eft/FlashlightCookie",
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         
         Laser = true,
-        LaserStrength = 0.5,
+        LaserIR = true,
+        LaserStrength = 0.0,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
         LaserColor = Color(238, 27, 27),
         LaserAttachment = 2,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },
     {
         PrintName = "None",
     }
 }
+
+local meow_offset1 = Vector(-1.8, -0.208151, 0.826)
+ATT.DrawFunc = function(swep, model, wm)
+    if wm then return end
+
+    drawlight(swep, model, 1, meow_offset1, meow_green)
+end
 
 
 ARC9.LoadAttachment(ATT, "eft_tactical_peq15_gray")
@@ -480,50 +534,78 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/tac_la5b.mdl"
 
 ATT.ToggleOnF = true
+
 ATT.ToggleStats = {
     {
         PrintName = "Laser",
         Laser = true,
+        LaserIR = true,
         LaserStrength = 0.5,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
         LaserColor = Color(238, 27, 27),
         LaserAttachment = 2,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
+    },  
+    {
+        PrintName = "IR Laser",
+        Laser = true,
+        LaserIR = true,
+        LaserStrength = 0.0,
+        LaserFlareMat = Material("effects/arc9_eft/laserdot"),
+        LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
+        LaserColor = Color(238, 27, 27),
+        LaserAttachment = 2,
+        EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },    
     {
         PrintName = "IR Light",
         Flashlight = true,
+        FlashlightIR = true,
         FlashlightColor = Color(255, 8, 0),
         FlashlightMaterial = "effects/arc9_eft/FlashlightCookie",
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },   
     {
-        PrintName = "IR + Laser",
+        PrintName = "IR + IR Laser",
         Flashlight = true,
         FlashlightColor = Color(255, 8, 0),
         FlashlightMaterial = "effects/arc9_eft/FlashlightCookie",
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         
         Laser = true,
-        LaserStrength = 0.5,
+        LaserIR = true,
+        LaserStrength = 0.0,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
         LaserColor = Color(238, 27, 27),
         LaserAttachment = 2,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },
     {
         PrintName = "None",
     }
 }
+
+local meow_offset1 = Vector(-1.8, -0.208151, 0.826)
+ATT.DrawFunc = function(swep, model, wm)
+    if wm then return end
+
+    drawlight(swep, model, 1, meow_offset1, meow_green)
+end
 
 
 ARC9.LoadAttachment(ATT, "eft_tactical_la5b_blk")
@@ -552,50 +634,78 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/tac_la5b.mdl"
 
 ATT.ToggleOnF = true
+
 ATT.ToggleStats = {
     {
         PrintName = "Laser",
         Laser = true,
+        LaserIR = true,
         LaserStrength = 0.5,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
         LaserColor = Color(238, 27, 27),
         LaserAttachment = 2,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
+    },  
+    {
+        PrintName = "IR Laser",
+        Laser = true,
+        LaserIR = true,
+        LaserStrength = 0.0,
+        LaserFlareMat = Material("effects/arc9_eft/laserdot"),
+        LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
+        LaserColor = Color(238, 27, 27),
+        LaserAttachment = 2,
+        EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },    
     {
         PrintName = "IR Light",
         Flashlight = true,
+        FlashlightIR = true,
         FlashlightColor = Color(255, 8, 0),
         FlashlightMaterial = "effects/arc9_eft/FlashlightCookie",
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },   
     {
-        PrintName = "IR + Laser",
+        PrintName = "IR + IR Laser",
         Flashlight = true,
         FlashlightColor = Color(255, 8, 0),
         FlashlightMaterial = "effects/arc9_eft/FlashlightCookie",
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         
         Laser = true,
-        LaserStrength = 0.5,
+        LaserIR = true,
+        LaserStrength = 0.0,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
         LaserColor = Color(238, 27, 27),
         LaserAttachment = 2,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },
     {
         PrintName = "None",
     }
 }
+
+local meow_offset1 = Vector(-1.8, -0.208151, 0.826)
+ATT.DrawFunc = function(swep, model, wm)
+    if wm then return end
+
+    drawlight(swep, model, 1, meow_offset1, meow_green)
+end
 
 
 ARC9.LoadAttachment(ATT, "eft_tactical_la5b_gray")
@@ -638,14 +748,16 @@ ATT.ToggleStats = {
         EFTHipFireSpreadBonus = true,
     },  
     {
-        PrintName = "Red Laser",
+        PrintName = "IR Laser",
         Laser = true,
-        LaserStrength = 0.6,
+        LaserIR = true,
+        LaserStrength = 0,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
-        LaserColor = Color(238, 27, 27),
-        LaserAttachment = 2,
+        LaserColor = Color(9, 255, 0),
+        LaserAttachment = 1,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },    
     {
         PrintName = "IR Light",
@@ -655,31 +767,46 @@ ATT.ToggleStats = {
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         EFTHipFireSpreadBonus = true,
+        EFTMode2 = true,
     },   
     {
-        PrintName = "IR + Laser",
+        PrintName = "IR + IR Laser",
         Flashlight = true,
         FlashlightColor = Color(255, 8, 0),
         FlashlightMaterial = "effects/arc9_eft/FlashlightCookie",
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         
         Laser = true,
-        LaserStrength = 0.6,
+        LaserIR = true,
+        LaserStrength = 0,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
-        LaserColor = Color(238, 27, 27),
-        LaserAttachment = 2,
+        LaserColor = Color(9, 255, 0),
+        LaserAttachment = 1,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
+        EFTMode2 = true,
     },
     {
         PrintName = "None",
     }
 }
+
+local meow_offset1 = Vector(-1.31, 0.0524, 1.065)
+local meow_offset2 = Vector(-1.31, -0.175954, 1.065)
+ATT.DrawFunc = function(swep, model, wm)
+    if wm then return end
+
+    drawlight(swep, model, 1, meow_offset1, meow_green)
+    drawlight(swep, model, 2, meow_offset2, meow_green)
+end
 
 
 ARC9.LoadAttachment(ATT, "eft_tactical_ls321_blk")
@@ -720,14 +847,16 @@ ATT.ToggleStats = {
         EFTHipFireSpreadBonus = true,
     },  
     {
-        PrintName = "Red Laser",
+        PrintName = "IR Laser",
         Laser = true,
-        LaserStrength = 0.6,
+        LaserIR = true,
+        LaserStrength = 0,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
-        LaserColor = Color(238, 27, 27),
-        LaserAttachment = 2,
+        LaserColor = Color(9, 255, 0),
+        LaserAttachment = 1,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
     },    
     {
         PrintName = "IR Light",
@@ -737,31 +866,46 @@ ATT.ToggleStats = {
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         EFTHipFireSpreadBonus = true,
+        EFTMode2 = true,
     },   
     {
-        PrintName = "IR + Laser",
+        PrintName = "IR + IR Laser",
         Flashlight = true,
         FlashlightColor = Color(255, 8, 0),
         FlashlightMaterial = "effects/arc9_eft/FlashlightCookie",
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         
         Laser = true,
-        LaserStrength = 0.6,
+        LaserIR = true,
+        LaserStrength = 0,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
-        LaserColor = Color(238, 27, 27),
-        LaserAttachment = 2,
+        LaserColor = Color(9, 255, 0),
+        LaserAttachment = 1,
         EFTHipFireSpreadBonus = true,
+        EFTMode1 = true,
+        EFTMode2 = true,
     },
     {
         PrintName = "None",
     }
 }
+
+local meow_offset1 = Vector(-1.31, 0.0524, 1.065)
+local meow_offset2 = Vector(-1.31, -0.175954, 1.065)
+ATT.DrawFunc = function(swep, model, wm)
+    if wm then return end
+
+    drawlight(swep, model, 1, meow_offset1, meow_green)
+    drawlight(swep, model, 2, meow_offset2, meow_green)
+end
 
 
 ARC9.LoadAttachment(ATT, "eft_tactical_ls321_gray")
@@ -928,12 +1072,13 @@ ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
         PrintName = "Screen",
-        RAPTAR = true,
+        EFTMode1 = true,
     },
     {
         PrintName = "Laser",
-        RAPTAR = true,
+        EFTMode1 = true,
         Laser = true,
+        LaserIR = true,
         LaserStrength = 0.5,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
@@ -942,10 +1087,11 @@ ATT.ToggleStats = {
         EFTHipFireSpreadBonus = true,
     },    
     {
-        PrintName = "Laser 2",
-        RAPTAR = true,
+        PrintName = "IR Laser",
+        EFTMode1 = true,
         Laser = true,
-        LaserStrength = 0.5,
+        LaserIR = true,
+        LaserStrength = 0.0,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
         LaserColor = Color(238, 27, 27),
@@ -954,29 +1100,32 @@ ATT.ToggleStats = {
     },    
     {
         PrintName = "IR Light",
-        RAPTAR = true,
+        EFTMode1 = true,
         Flashlight = true,
         FlashlightColor = Color(255, 8, 0),
         FlashlightMaterial = "effects/arc9_eft/FlashlightCookie",
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         EFTHipFireSpreadBonus = true,
     },
     {
-        PrintName = "IR + Laser",
-        RAPTAR = true,
+        PrintName = "IR + IR Laser",
+        EFTMode1 = true,
         Flashlight = true,
         FlashlightColor = Color(255, 8, 0),
         FlashlightMaterial = "effects/arc9_eft/FlashlightCookie",
         FlashlightDistance = 1024,
         FlashlightFOV = 30,
         FlashlightAttachment = 1,
-        FlashlightBrightness = 0.05,
+        FlashlightBrightness = 0,
+        FlashlightIR = true,
         
         Laser = true,
-        LaserStrength = 0.5,
+        LaserIR = true,
+        LaserStrength = 0.0,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
         LaserTraceMat = Material("effects/arc9_eft/lasertrace"),
         LaserColor = Color(238, 27, 27),
@@ -5757,3 +5906,265 @@ ATT.Attachments = {
 
 
 ARC9.LoadAttachment(ATT, "eft_scope_shakhin_blk")
+
+
+///////////////////////////////////////      eft_pm_pg_blk
+
+ATT = {}
+
+ATT.PrintName = "PM bakelite side grips"
+ATT.CompactName = "PM bak."
+ATT.Icon = Material("entities/eft_pm_attachments/g_blk.png", "mips smooth")
+ATT.Description = [[Standard-issue bakelite side grip panels for the PM pistol.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.HasGrip = true 
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_pm_pg"}
+
+ATT.SubMaterial5 = "models/weapons/arc9/darsu_eft/mods/pistolgrip_pm_izhmeh_pm_std_BLK"
+ATT.ActivateElements = {"eft_pm_pg_std"}
+
+ARC9.LoadAttachment(ATT, "eft_pm_pg_blk")
+
+
+///////////////////////////////////////      eft_pb_pg_blk
+
+ATT = {}
+
+ATT.PrintName = "PB bakelite side grips"
+ATT.CompactName = "PB bak."
+ATT.Icon = Material("entities/eft_pm_attachments/gpb_blk.png", "mips smooth")
+ATT.Description = [[Standard-issue bakelite side grip panels for the PB pistol, manufactured by TsNIITochMash.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.HasReciever = true 
+ATT.HasGrip = true 
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_pb_pg"}
+
+ATT.SubMaterial1 = "models/weapons/arc9/darsu_eft/mods/pistolgrip_pb_tochmash_pb_std_BLK"
+ATT.ActivateElements = {"eft_pb_pg_std"}
+
+ARC9.LoadAttachment(ATT, "eft_pb_pg_blk")
+
+
+
+
+///////////////////////////////////////      eft_aps_pg_blk
+
+ATT = {}
+
+ATT.PrintName = "APS bakelite side-pieces"
+ATT.CompactName = "APS bak."
+ATT.Icon = Material("entities/eft_aps_attachments/g_blk.png", "mips smooth")
+ATT.Description = [[Standard-issue APS pistol bakelite side grips.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.HasGrip = true 
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_aps_pg"}
+
+ATT.SubMaterial5 = "models/weapons/arc9/darsu_eft/mods/pistolgrip_aps_molot_aps_apb_std_BLK"
+ATT.ActivateElements = {"eft_aps_pg_std"}
+
+ARC9.LoadAttachment(ATT, "eft_aps_pg_blk")
+
+
+///////////////////////////////////////      eft_rpd_hg_blk
+
+ATT = {}
+
+ATT.PrintName = "RPD wooden handguard"
+ATT.CompactName = "RPD wood"
+ATT.Icon = Material("entities/eft_rpd_attachments/hg_blk.png", "mips smooth")
+ATT.Description = [[A standard-issue wooden handguard for the RPD machine gun. Manufactured by V.A. Degtyarev Plant.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.HasHG = true 
+
+ATT.SortOrder = 1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
+ATT.Category = {"eft_rpd_handguard"}
+
+ATT.SubMaterial8 = "models/weapons/arc9/darsu_eft/mods/handguard_rpd_zid_std_BLK_LOD0"
+ATT.ActivateElements = {"eft_rpd_hg"}
+
+ARC9.LoadAttachment(ATT, "eft_rpd_hg_blk")
+
+
+///////////////////////////////////////      eft_rpd_stock_blk
+
+ATT = {}
+
+ATT.PrintName = "RPD wooden stock"
+ATT.CompactName = "RPD wood"
+ATT.Icon = Material("entities/eft_rpd_attachments/s_blk.png", "mips smooth")
+ATT.Description = [[A standard-issue wooden stock for the RPD machine gun. Manufactured by V.A. Degtyarev Plant.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+ATT.HasStock = true 
+
+ATT.EFTErgoAdd = 16
+ATT.CustomPros = { Ergonomics = "+16" }
+ATT.RecoilMult = 0.78
+ATT.VisualRecoilMult = 0.78
+
+ATT.SortOrder = 1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_stock_rpd"}
+
+ATT.SubMaterial12 = "models/weapons/arc9/darsu_eft/mods/stock_rpd_zid_rpd_BLK_std_LOD0"
+ATT.ActivateElements = {"eft_rpd_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Pistol Grip",
+        Category = "eft_pg_rpd",
+        Pos = Vector(0, 0, 3),
+        Ang = Angle(0, -90, 0),
+    },
+}
+ARC9.LoadAttachment(ATT, "eft_rpd_stock_blk")
+
+///////////////////////////////////////      eft_rpd_pg_blk
+
+ATT = {}
+
+ATT.PrintName = "RPD polymer pistol grip"
+ATT.CompactName = "RPD PG"
+ATT.Icon = Material("entities/eft_rpd_attachments/pg_blk.png", "mips smooth")
+ATT.Description = [[A standard-issue polymer pistol grip for the RPD machine gun. Manufactured by V.A. Degtyarev Plant.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.HasGrip = true 
+
+ATT.SortOrder = 1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.Category = {"eft_pg_rpd"}
+
+ATT.SubMaterial10 = "models/weapons/arc9/darsu_eft/mods/pistolgrip_rpd_zid_BLK_std_LOD0"
+ATT.ActivateElements = {"eft_rpd_pg"}
+
+ARC9.LoadAttachment(ATT, "eft_rpd_pg_blk")
+
+
+///////////////////////////////////////      eft_rpd_hg_poly
+
+ATT = {}
+
+ATT.PrintName = "RPD polymer handguard"
+ATT.CompactName = "RPD poly"
+ATT.Icon = Material("entities/eft_rpd_attachments/hg_poly.png", "mips smooth")
+ATT.Description = [[A standard-issue polymer handguard for the RPD machine gun. Manufactured by V.A. Degtyarev Plant.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.HasHG = true 
+
+ATT.SortOrder = 2
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 5
+ATT.CustomPros = { Ergonomics = "+5" }
+
+ATT.Category = {"eft_rpd_handguard"}
+
+ATT.SubMaterial8 = "models/weapons/arc9/darsu_eft/mods/handguard_rpd_zid_std_POLY_LOD0"
+ATT.ActivateElements = {"eft_rpd_hg"}
+
+ARC9.LoadAttachment(ATT, "eft_rpd_hg_poly")
+
+
+///////////////////////////////////////      eft_rpd_stock_poly
+
+ATT = {}
+
+ATT.PrintName = "RPD polymer stock"
+ATT.CompactName = "RPD poly"
+ATT.Icon = Material("entities/eft_rpd_attachments/s_poly.png", "mips smooth")
+ATT.Description = [[A standard-issue polymer stock for the RPD machine gun. Manufactured by V.A. Degtyarev Plant.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+ATT.HasStock = true 
+
+ATT.EFTErgoAdd = 16
+ATT.CustomPros = { Ergonomics = "+16" }
+ATT.RecoilMult = 0.78
+ATT.VisualRecoilMult = 0.78
+
+ATT.SortOrder = 2
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_stock_rpd"}
+
+ATT.SubMaterial12 = "models/weapons/arc9/darsu_eft/mods/stock_rpd_zid_rpd_POLY_std_LOD0"
+ATT.ActivateElements = {"eft_rpd_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Pistol Grip",
+        Category = "eft_pg_rpd",
+        Pos = Vector(0, 0, 3),
+        Ang = Angle(0, -90, 0),
+    },
+}
+ARC9.LoadAttachment(ATT, "eft_rpd_stock_poly")
+
+///////////////////////////////////////      eft_rpd_pg_poly
+
+ATT = {}
+
+ATT.PrintName = "RPD polymer pistol grip"
+ATT.CompactName = "RPD PG"
+ATT.Icon = Material("entities/eft_rpd_attachments/pg_poly.png", "mips smooth")
+ATT.Description = [[A standard-issue polymer pistol grip for the RPD machine gun. Manufactured by V.A. Degtyarev Plant.
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+
+ATT.HasGrip = true 
+
+ATT.SortOrder = 2
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = 2
+ATT.CustomPros = { Ergonomics = "+2" }
+
+ATT.Category = {"eft_pg_rpd"}
+
+ATT.SubMaterial10 = "models/weapons/arc9/darsu_eft/mods/pistolgrip_rpd_zid_POLY_std_LOD0"
+ATT.ActivateElements = {"eft_rpd_pg"}
+
+ARC9.LoadAttachment(ATT, "eft_rpd_pg_poly")
