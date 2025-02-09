@@ -1,4 +1,15 @@
+local ATT = {}
 
+local flaremat = Material("effects/arc9_eft/laserdot", "mips smooth")
+local meow_green = Color(31, 172, 18)
+local meow_red = Color(172, 27, 27)
+
+local function drawlight(swep, model, mode, offset, color)
+    if swep:GetValue("EFTMode" .. mode) then
+        render.SetMaterial(flaremat)
+        render.DrawSprite(model:LocalToWorld(offset), 0.3, 0.3, color)
+    end
+end
 
 ///////////////////////////////////////      eft_foregrip_rtm_p2_blk
 
@@ -982,7 +993,6 @@ ATT = {}
 ATT.PrintName = "Wilcox RAPTAR ES Tactical Rangefinder"
 ATT.CompactName = "RAPTAR"
 ATT.Description = [[The early generation of the tactical device called "RAPTAR" combined with a rangefinder. It has visible and IR lasers, as well as an infrared illuminator.
-
 Not present in EFT. Part of the BLACK ATTS addon.]]
 
 ATT.Icon = Material("entities/eft_attachments/tactical/raptar_blk.png", "mips smooth")
@@ -1023,12 +1033,12 @@ if CLIENT then
 end
 
 local textoffset = Vector(-1.9, 0, 0.69)
-local textcolor = Color(255, 239, 22)
+local textcolor = Color(131, 196, 70)
 local text = ""
 local nextcall = CurTime()
 
 ATT.DrawFunc = function(swep, model, wm)
-    if !swep:GetProcessedValue("RAPTAR") then return end
+    if wm or !swep:GetValue("EFTMode1") then return end
     if !IsValid(swep:GetOwner()) or !swep:GetOwner():IsPlayer() then return end
 
     if CurTime() > nextcall then
