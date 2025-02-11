@@ -1,4 +1,5 @@
 local ATT = {}
+local arc9_cheapscopes = GetConVar("arc9_cheapscopes")
 
 local flaremat = Material("effects/arc9_eft/laserdot", "mips smooth")
 local meow_green = Color(31, 172, 18)
@@ -1539,7 +1540,8 @@ ATT.RTScopeDrawFunc = function(swep, rtsize, sight)
     surface.SetMaterial(mat)
     surface.SetDrawColor(255, 255, 255)
     -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
-    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -swep.ViewModelAng.z + sight.Ang.z)
+    local counterrotation = swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2)
+    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
 end
 
 ATT.ZoomSound = false
@@ -1721,7 +1723,8 @@ ATT.RTScopeDrawFunc = function(swep, rtsize, sight)
     surface.SetMaterial(mat)
     surface.SetDrawColor(255, 255, 255)
     -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
-    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -swep.ViewModelAng.z + sight.Ang.z)
+    local counterrotation = swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2)
+    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
 end
 
 ATT.ZoomSound = false
@@ -1821,7 +1824,8 @@ ATT.RTScopeDrawFunc = function(swep, rtsize, sight)
     surface.SetMaterial(mat)
     surface.SetDrawColor(255, 255, 255)
     -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
-    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -swep.ViewModelAng.z + sight.Ang.z)
+    local counterrotation = swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2)
+    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
 end
 
 ATT.ZoomSound = false
@@ -1920,7 +1924,8 @@ ATT.RTScopeDrawFunc = function(swep, rtsize, sight)
     surface.SetMaterial(mat)
     surface.SetDrawColor(255, 255, 255)
     -- surface.DrawTexturedRect(rtsize / 2 - size / 2, rtsize / 2 - size / 2, size, size)
-    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -swep.ViewModelAng.z + sight.Ang.z)
+    local counterrotation = swep.LastViewModelAng.z - sight.Ang.z + (arc9_cheapscopes:GetBool() and 0 or swep.SubtleVisualRecoilAng.z * 2)
+    surface.DrawTexturedRectRotated(rtsize / 2, rtsize / 2, size, size, -counterrotation)
 end
 
 ATT.ZoomSound = false
