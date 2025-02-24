@@ -1187,7 +1187,7 @@ ATT.Attachments = {
         Pos = Vector(0, -0, -0.25),
         --Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0.2),
+        Icon_Offset = Vector(0, 0, 1),
     },
 }
 
@@ -1460,9 +1460,8 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 440/1080
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/scope_all_walther_mrs_mark_000.png", "mips smooth")
-ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 700
+ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/new/scope_all_walther_mrs_mark_001")
+ATT.HoloSightSize = 600
 ATT.HoloSightColorable = false
 
 
@@ -2902,6 +2901,55 @@ ATT.DropMagazineModelHook = function(swep, old)
 end
 
 ARC9.LoadAttachment(ATT, "eft_pkm_mag_100_blk")
+
+///////////////////////////////////////      eft_pkm_mag_100_sticker_blk
+
+ATT = {}
+
+ATT.PrintName = "PK 7.62x54R 100-round box"
+ATT.CompactName = "PK"
+ATT.Icon = Material("entities/eft_extras_attachments/pkmmagsticker_blk.png", "mips smooth")
+ATT.Description = [[A standard-issue 100-round ammunition box for 7.62x54R ammo for Kalashnikov Machine gun. Manufactured by V.A. Degtyarev Plant. with stickre
+
+Not present in EFT. Part of the BLACK ATTS addon.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_pkm_dropped_blk.mdl"
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 100
+
+ATT.EFTErgoAdd = -30
+ATT.CustomCons = { Ergonomics = "-30" }
+ATT.MalfunctionMeanShotsToFailMult = 0.99
+
+ATT.Category = {"eft_mag_pkm"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Sticker M",
+        StickerModel = "models/weapons/arc9/darsu_eft/stickers/pkm_mag.mdl",
+        Category = "stickers",
+        ForceNoCosmetics = true,
+        Pos = Vector(2, 1, 3),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ATT.ActivateElements = {"eft_pkm_mag_100"}
+
+ATT.SubMaterial13 = "models/weapons/arc9/darsu_eft/mods/mag_pkm_zid_pk_std_762x54r_100_base_BLK"
+ATT.SubMaterial14 = "models/weapons/arc9/darsu_eft/mods/mag_pkm_zid_pk_std_762x54r_100_details_BLK"
+
+ATT.DropMagazineModelHook = function(swep, old)
+    if swep:GetReloading() then
+        return "models/weapons/arc9/darsu_eft/mods/mag_pkm_dropped_blk.mdl"
+    end
+    return "models/weapons/arc9/darsu_eft/mods/belt_pkm_dropped.mdl"
+end
+
+ARC9.LoadAttachment(ATT, "eft_pkm_mag_100_sticker_blk")
 
 
 
