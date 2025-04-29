@@ -2059,19 +2059,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.EFTErgoAdd = 5
 ATT.CustomPros = { Ergonomics = "+5" }
 
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_pufgun_20_blk.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p20_blk.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p20_blk.mdl"
 ATT.DropMagazineAmount = 1
 
 ATT.Category = {
     "eft_vityaz_mag",
 }
 
-ATT.ActivateElements = {"eft_vityaz_mag_sg919_20","9mmmag"}
-
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
-
-ATT.SubMaterial8 = "models/weapons/arc9/darsu_eft/mods/mag_pp-19-01_pufgun_mag_sg-919_30_9x19_30_BLK"
 
 
 ARC9.LoadAttachment(ATT, "eft_vityaz_mag_sg919_20_blk")
@@ -2094,19 +2091,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.EFTErgoAdd = -2
 ATT.CustomCons = { Ergonomics = "-2" }
 
-ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_pufgun_30_blk.mdl"
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p30_blk.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p30_blk.mdl"
 ATT.DropMagazineAmount = 1
 
 ATT.Category = {
     "eft_vityaz_mag",
 }
 
-ATT.ActivateElements = {"eft_vityaz_mag_sg919_30","9mmmag"}
-
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
-
-ATT.SubMaterial8 = "models/weapons/arc9/darsu_eft/mods/mag_pp-19-01_pufgun_mag_sg-919_30_9x19_30_BLK"
 
 
 ARC9.LoadAttachment(ATT, "eft_vityaz_mag_sg919_30_blk")
