@@ -2067,6 +2067,8 @@ ATT.Category = {
     "eft_vityaz_mag",
 }
 
+ATT.ActivateElements = {"9mmmag"}
+
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
@@ -2098,6 +2100,8 @@ ATT.DropMagazineAmount = 1
 ATT.Category = {
     "eft_vityaz_mag",
 }
+
+ATT.ActivateElements = {"9mmmag"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
