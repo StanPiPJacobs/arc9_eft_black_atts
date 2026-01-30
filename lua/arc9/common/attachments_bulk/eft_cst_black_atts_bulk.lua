@@ -4032,7 +4032,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_vss_stock"}
 
 ATT.ActivateElements = {"eft_val_vss_stock"}
-ATT.SubMaterial8 = "models/weapons/arc9/darsu_eft/mods/stock_vss_tochmash_vss_std_wood_blk"
+ATT.SubMaterial10 = "models/weapons/arc9/darsu_eft/mods/stock_vss_tochmash_vss_std_wood_blk"
 
 ARC9.LoadAttachment(ATT, "eft_val_vss_stock_dark")
 
